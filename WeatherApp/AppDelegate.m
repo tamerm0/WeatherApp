@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  WeatherApp
 //
-//  Created by Top on 5/12/16.
+//  Created by Tamer on 5/12/16.
 //  Copyright © 2016 Careem. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "CWADependencies.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Override point for customization after application launch.
+
+	CWADependencies *dependencies = [[CWADependencies alloc] init];
 	return YES;
 }
 

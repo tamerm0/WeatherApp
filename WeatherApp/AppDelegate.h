@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  WeatherApp
 //
-//  Created by Top on 5/12/16.
+//  Created by Tamer on 5/12/16.
 //  Copyright © 2016 Careem. All rights reserved.
 //
 

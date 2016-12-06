@@ -18,7 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+	UINavigationController *navigationController = [[UINavigationController alloc] init];
+	navigationController.navigationBar.translucent = NO;
+	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	self.window.rootViewController = navigationController;
 	CWADependencies *dependencies = [[CWADependencies alloc] init];
+	[dependencies installRootViewControllerInWindow:self.window];
+	[self.window makeKeyAndVisible];
 	return YES;
 }
 

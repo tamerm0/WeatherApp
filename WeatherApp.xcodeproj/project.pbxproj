@@ -18,6 +18,8 @@
 		EEC7A4B61DF5B548000F6327 /* CWASearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC7A4B51DF5B548000F6327 /* CWASearchViewController.xib */; };
 		EEC7A4B91DF5B565000F6327 /* CWASearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4B81DF5B565000F6327 /* CWASearchViewController.m */; };
 		EEC7A4BC1DF5B8F3000F6327 /* CWADependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4BB1DF5B8F3000F6327 /* CWADependencies.m */; };
+		EEC7A4C01DF5CEFF000F6327 /* CWARootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4BF1DF5CEFF000F6327 /* CWARootWireframe.m */; };
+		EEC7A4C31DF5D013000F6327 /* CWASearchWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4C21DF5D013000F6327 /* CWASearchWireframe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		EEC7A4B81DF5B565000F6327 /* CWASearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASearchViewController.m; sourceTree = "<group>"; };
 		EEC7A4BA1DF5B8F3000F6327 /* CWADependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWADependencies.h; sourceTree = "<group>"; };
 		EEC7A4BB1DF5B8F3000F6327 /* CWADependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWADependencies.m; sourceTree = "<group>"; };
+		EEC7A4BE1DF5CEFF000F6327 /* CWARootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWARootWireframe.h; sourceTree = "<group>"; };
+		EEC7A4BF1DF5CEFF000F6327 /* CWARootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWARootWireframe.m; sourceTree = "<group>"; };
+		EEC7A4C11DF5D013000F6327 /* CWASearchWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASearchWireframe.h; sourceTree = "<group>"; };
+		EEC7A4C21DF5D013000F6327 /* CWASearchWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASearchWireframe.m; sourceTree = "<group>"; };
+		EEC7A4C41DF5D81D000F6327 /* CWARootWireframeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWARootWireframeInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +116,7 @@
 		EEC7A47B1DF5997C000F6327 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				EEC7A4BD1DF5CEDD000F6327 /* Wireframes */,
 				EEC7A4B11DF5B513000F6327 /* ViewControllers */,
 				EEC7A4AD1DF5B513000F6327 /* Resources */,
 				EEC7A47F1DF5997C000F6327 /* AppDelegate.h */,
@@ -164,6 +172,18 @@
 				EEC7A4B51DF5B548000F6327 /* CWASearchViewController.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EEC7A4BD1DF5CEDD000F6327 /* Wireframes */ = {
+			isa = PBXGroup;
+			children = (
+				EEC7A4C41DF5D81D000F6327 /* CWARootWireframeInterface.h */,
+				EEC7A4BE1DF5CEFF000F6327 /* CWARootWireframe.h */,
+				EEC7A4BF1DF5CEFF000F6327 /* CWARootWireframe.m */,
+				EEC7A4C11DF5D013000F6327 /* CWASearchWireframe.h */,
+				EEC7A4C21DF5D013000F6327 /* CWASearchWireframe.m */,
+			);
+			path = Wireframes;
 			sourceTree = "<group>";
 		};
 		F26EB1B4973865033FD368CE /* Frameworks */ = {
@@ -378,6 +398,8 @@
 			files = (
 				EEC7A4B91DF5B565000F6327 /* CWASearchViewController.m in Sources */,
 				EEC7A48A1DF5997C000F6327 /* WeatherApp.xcdatamodeld in Sources */,
+				EEC7A4C31DF5D013000F6327 /* CWASearchWireframe.m in Sources */,
+				EEC7A4C01DF5CEFF000F6327 /* CWARootWireframe.m in Sources */,
 				EEC7A4811DF5997C000F6327 /* AppDelegate.m in Sources */,
 				EEC7A4BC1DF5B8F3000F6327 /* CWADependencies.m in Sources */,
 				EEC7A47E1DF5997C000F6327 /* main.m in Sources */,

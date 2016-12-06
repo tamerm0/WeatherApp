@@ -10,13 +10,14 @@
 #import <UIKit/UIKit.h>
 #import "CWARootWireframeInterface.h"
 
-@interface CWASearchWireframe : NSObject
+#import "CWASearchWireframeInterface.h"
+
+#import "CWAViewControllersAssembly.h"
+
+@interface CWASearchWireframe : NSObject<CWASearchWireframeInterface>
+
+@property (nonatomic, strong)		CWAViewControllersAssembly *viewConttollers;
 	
 @property (nonatomic, strong)		id<CWARootWireframeInterface> rootWireframe;
 
-/**
- * Present search view controller to app window
- */
-- (void)presentSearchViewInWindow:(UIWindow *)window;
-	
 @end

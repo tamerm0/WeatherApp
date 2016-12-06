@@ -13,12 +13,7 @@
 
 - (void)presentSearchViewInWindow:(UIWindow *)window {
 	
-	CWASearchViewController *searchViewController = [self searchViewController];
-	[self.rootWireframe showRootViewController:searchViewController inWindow:window];
+	[self.rootWireframe showRootViewController:self.viewConttollers.searchViewController inWindow:window];
 }
-	
-- (CWASearchViewController *)searchViewController {
-	return [[CWASearchViewController alloc] initWithNibName:nil bundle:nil];
-}
-	
+
 @end

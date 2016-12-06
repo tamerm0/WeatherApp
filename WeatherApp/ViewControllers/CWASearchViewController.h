@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol CWASearchPresenterInterface;
 @interface CWASearchViewController : UIViewController
+
+@property (nonatomic, strong)	id<CWASearchPresenterInterface> eventHandler;
 
 @end

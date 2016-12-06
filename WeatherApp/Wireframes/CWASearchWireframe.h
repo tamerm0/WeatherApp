@@ -2,7 +2,7 @@
 //  CWASearchWireframe.h
 //  WeatherApp
 //
-//  Created by Top on 6/12/16.
+//  Created by Tamer on 6/12/16.
 //  Copyright © 2016 Careem. All rights reserved.
 //
 
@@ -12,11 +12,11 @@
 
 #import "CWASearchWireframeInterface.h"
 
-#import "CWAViewControllersAssembly.h"
+#import "CWASearchViewControllerProvider.h"
 
 @interface CWASearchWireframe : NSObject<CWASearchWireframeInterface>
 
-@property (nonatomic, strong)		CWAViewControllersAssembly *viewConttollers;
+@property (nonatomic, strong)		id<CWASearchViewControllerProvider> searchViewControllerProvider;
 	
 @property (nonatomic, strong)		id<CWARootWireframeInterface> rootWireframe;
 

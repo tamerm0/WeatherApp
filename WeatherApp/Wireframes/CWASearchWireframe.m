@@ -2,7 +2,7 @@
 //  CWASearchWireframe.m
 //  WeatherApp
 //
-//  Created by Top on 6/12/16.
+//  Created by Tamer on 6/12/16.
 //  Copyright © 2016 Careem. All rights reserved.
 //
 
@@ -13,7 +13,7 @@
 
 - (void)presentSearchViewInWindow:(UIWindow *)window {
 	
-	[self.rootWireframe showRootViewController:self.viewConttollers.searchViewController inWindow:window];
+	[self.rootWireframe showRootViewController:self.searchViewControllerProvider.searchViewController inWindow:window];
 }
 
 @end

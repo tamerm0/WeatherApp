@@ -2,7 +2,7 @@
 //  CWAViewControllersAssembly.h
 //  WeatherApp
 //
-//  Created by Top on 6/12/16.
+//  Created by Tamer on 6/12/16.
 //  Copyright © 2016 Careem. All rights reserved.
 //
 
@@ -12,10 +12,10 @@
 
 #import "CWAPresentersAssembly.h"
 
-@interface CWAViewControllersAssembly : TyphoonAssembly
+#import "CWASearchViewControllerProvider.h"
+
+@interface CWAViewControllersAssembly : TyphoonAssembly<CWASearchViewControllerProvider>
 
 @property (nonatomic, strong)	CWAPresentersAssembly *persenters;
-
-- (CWASearchViewController *)searchViewController;
 
 @end

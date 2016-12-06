@@ -55,6 +55,7 @@
 		EE4E18CB1DF6F42900E7EA92 /* CWASearchPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASearchPresenter.m; sourceTree = "<group>"; };
 		EE4E18CD1DF6F45900E7EA92 /* CWAPresentersAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAPresentersAssembly.h; sourceTree = "<group>"; };
 		EE4E18CE1DF6F45900E7EA92 /* CWAPresentersAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAPresentersAssembly.m; sourceTree = "<group>"; };
+		EE4E18D01DF706A500E7EA92 /* CWASearchViewControllerProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWASearchViewControllerProvider.h; sourceTree = "<group>"; };
 		EEC7A4791DF5997C000F6327 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC7A47D1DF5997C000F6327 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEC7A47F1DF5997C000F6327 /* CWAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWAAppDelegate.h; sourceTree = "<group>"; };
@@ -219,6 +220,7 @@
 				EEC7A4C41DF5D81D000F6327 /* CWARootWireframeInterface.h */,
 				EEC7A4BE1DF5CEFF000F6327 /* CWARootWireframe.h */,
 				EEC7A4BF1DF5CEFF000F6327 /* CWARootWireframe.m */,
+				EE4E18D01DF706A500E7EA92 /* CWASearchViewControllerProvider.h */,
 				EE4E18C11DF6E9DE00E7EA92 /* CWASearchWireframeInterface.h */,
 				EEC7A4C11DF5D013000F6327 /* CWASearchWireframe.h */,
 				EEC7A4C21DF5D013000F6327 /* CWASearchWireframe.m */,

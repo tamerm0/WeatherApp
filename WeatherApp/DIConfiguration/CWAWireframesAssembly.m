@@ -9,6 +9,7 @@
 #import "CWAWireframesAssembly.h"
 
 #import "CWASearchWireframe.h"
+#import "CWADetailsWireframe.h"
 #import "CWARootWireframe.h"
 
 #import "CWAViewControllersAssembly.h"
@@ -20,6 +21,12 @@
 	return [TyphoonDefinition withClass:[CWASearchWireframe class] configuration:^(TyphoonDefinition *definition) {
 		[definition injectProperty:@selector(rootWireframe) with:[self rootWireframe]];
 		[definition injectProperty:@selector(searchViewControllerProvider) with:self.viewControllers];
+	}];
+}
+
+- (id<CWADetailsWireframeInterface>)detailsWireframe {
+	return [TyphoonDefinition withClass:[CWADetailsWireframe class] configuration:^(TyphoonDefinition *definition) {
+		[definition injectProperty:@selector(detailsViewControllerProvider) with:self.viewControllers];
 	}];
 }
 

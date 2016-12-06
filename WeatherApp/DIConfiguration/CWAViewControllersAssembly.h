@@ -13,9 +13,10 @@
 #import "CWAPresentersAssembly.h"
 
 #import "CWASearchViewControllerProvider.h"
+#import "CWADetailsViewControllerProvider.h"
 
-@interface CWAViewControllersAssembly : TyphoonAssembly<CWASearchViewControllerProvider>
+@interface CWAViewControllersAssembly : TyphoonAssembly<CWASearchViewControllerProvider, CWADetailsViewControllerProvider>
 
-@property (nonatomic, strong)	CWAPresentersAssembly *persenters;
+@property (nonatomic, strong)	CWAPresentersAssembly *presenters;
 
 @end

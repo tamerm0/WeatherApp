@@ -8,14 +8,22 @@
 
 #import "CWAPresentersAssembly.h"
 
-#import "CWASearchPresenterInterface.h"
 #import "CWASearchPresenter.h"
+#import "CWADetailsPresenter.h"
 
 @implementation CWAPresentersAssembly
 
 - (id<CWASearchPresenterInterface>)searchPresenter {
 	return [TyphoonDefinition withClass:[CWASearchPresenter class] configuration:^(TyphoonDefinition *definition) {
 		[definition injectProperty:@selector(searchWireframe) with:[self.wireframes searchWireframe]];
+		[definition injectProperty:@selector(searchInteractor) with:[self.interactors searchInteractor]];
+	}];
+}
+
+- (id<CWADetailsPresenterInterface>)detailsPresenter {
+	return [TyphoonDefinition withClass:[CWADetailsPresenter class] configuration:^(TyphoonDefinition *definition) {
+		[definition injectProperty:@selector(detailsWireframe) with:[self.wireframes detailsWireframe]];
+		[definition injectProperty:@selector(detailsInteractor) with:[self.interactors detailsInteractor]];
 	}];
 }
 

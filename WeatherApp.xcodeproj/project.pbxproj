@@ -14,6 +14,12 @@
 		EE4E18C71DF6EE2400E7EA92 /* CWAViewControllersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18C61DF6EE2400E7EA92 /* CWAViewControllersAssembly.m */; };
 		EE4E18CC1DF6F42900E7EA92 /* CWASearchPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18CB1DF6F42900E7EA92 /* CWASearchPresenter.m */; };
 		EE4E18CF1DF6F45900E7EA92 /* CWAPresentersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18CE1DF6F45900E7EA92 /* CWAPresentersAssembly.m */; };
+		EE4E18D61DF77F3400E7EA92 /* CWADetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18D51DF77F3400E7EA92 /* CWADetailsViewController.m */; };
+		EE4E18DA1DF77FA600E7EA92 /* CWADetailsWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18D91DF77FA600E7EA92 /* CWADetailsWireframe.m */; };
+		EE4E18DF1DF780A100E7EA92 /* CWADetailsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18DE1DF780A100E7EA92 /* CWADetailsPresenter.m */; };
+		EE4E18E41DF7817500E7EA92 /* CWASearchInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18E31DF7817500E7EA92 /* CWASearchInteractor.m */; };
+		EE4E18E81DF781B200E7EA92 /* CWADetailsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18E71DF781B200E7EA92 /* CWADetailsInteractor.m */; };
+		EE4E18EB1DF781EC00E7EA92 /* CWAInteractorsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18EA1DF781EC00E7EA92 /* CWAInteractorsAssembly.m */; };
 		EEC7A47E1DF5997C000F6327 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A47D1DF5997C000F6327 /* main.m */; };
 		EEC7A4811DF5997C000F6327 /* CWAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4801DF5997C000F6327 /* CWAAppDelegate.m */; };
 		EEC7A48A1DF5997C000F6327 /* WeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4881DF5997C000F6327 /* WeatherApp.xcdatamodeld */; };
@@ -56,6 +62,23 @@
 		EE4E18CD1DF6F45900E7EA92 /* CWAPresentersAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAPresentersAssembly.h; sourceTree = "<group>"; };
 		EE4E18CE1DF6F45900E7EA92 /* CWAPresentersAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAPresentersAssembly.m; sourceTree = "<group>"; };
 		EE4E18D01DF706A500E7EA92 /* CWASearchViewControllerProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWASearchViewControllerProvider.h; sourceTree = "<group>"; };
+		EE4E18D11DF77ED000E7EA92 /* CWADetailsViewControllerProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWADetailsViewControllerProvider.h; sourceTree = "<group>"; };
+		EE4E18D41DF77F3400E7EA92 /* CWADetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWADetailsViewController.h; sourceTree = "<group>"; };
+		EE4E18D51DF77F3400E7EA92 /* CWADetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWADetailsViewController.m; sourceTree = "<group>"; };
+		EE4E18D71DF77F8600E7EA92 /* CWADetailsWireframeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWADetailsWireframeInterface.h; sourceTree = "<group>"; };
+		EE4E18D81DF77FA600E7EA92 /* CWADetailsWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWADetailsWireframe.h; sourceTree = "<group>"; };
+		EE4E18D91DF77FA600E7EA92 /* CWADetailsWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWADetailsWireframe.m; sourceTree = "<group>"; };
+		EE4E18DB1DF7808000E7EA92 /* CWADetailsPresenterInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWADetailsPresenterInterface.h; sourceTree = "<group>"; };
+		EE4E18DD1DF780A100E7EA92 /* CWADetailsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWADetailsPresenter.h; sourceTree = "<group>"; };
+		EE4E18DE1DF780A100E7EA92 /* CWADetailsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWADetailsPresenter.m; sourceTree = "<group>"; };
+		EE4E18E11DF7815B00E7EA92 /* CWASearchInteractorInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWASearchInteractorInterface.h; sourceTree = "<group>"; };
+		EE4E18E21DF7817500E7EA92 /* CWASearchInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASearchInteractor.h; sourceTree = "<group>"; };
+		EE4E18E31DF7817500E7EA92 /* CWASearchInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASearchInteractor.m; sourceTree = "<group>"; };
+		EE4E18E51DF7819800E7EA92 /* CWADetailsInteractorInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWADetailsInteractorInterface.h; sourceTree = "<group>"; };
+		EE4E18E61DF781B200E7EA92 /* CWADetailsInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWADetailsInteractor.h; sourceTree = "<group>"; };
+		EE4E18E71DF781B200E7EA92 /* CWADetailsInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWADetailsInteractor.m; sourceTree = "<group>"; };
+		EE4E18E91DF781EC00E7EA92 /* CWAInteractorsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAInteractorsAssembly.h; sourceTree = "<group>"; };
+		EE4E18EA1DF781EC00E7EA92 /* CWAInteractorsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAInteractorsAssembly.m; sourceTree = "<group>"; };
 		EEC7A4791DF5997C000F6327 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC7A47D1DF5997C000F6327 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEC7A47F1DF5997C000F6327 /* CWAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWAAppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +142,8 @@
 				EE4E18C61DF6EE2400E7EA92 /* CWAViewControllersAssembly.m */,
 				EE4E18CD1DF6F45900E7EA92 /* CWAPresentersAssembly.h */,
 				EE4E18CE1DF6F45900E7EA92 /* CWAPresentersAssembly.m */,
+				EE4E18E91DF781EC00E7EA92 /* CWAInteractorsAssembly.h */,
+				EE4E18EA1DF781EC00E7EA92 /* CWAInteractorsAssembly.m */,
 			);
 			path = DIConfiguration;
 			sourceTree = "<group>";
@@ -126,11 +151,54 @@
 		EE4E18C81DF6F3F600E7EA92 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				EE4E18C91DF6F41000E7EA92 /* CWASearchPresenterInterface.h */,
+				EE4E18DC1DF7808900E7EA92 /* Interfaces */,
 				EE4E18CA1DF6F42900E7EA92 /* CWASearchPresenter.h */,
 				EE4E18CB1DF6F42900E7EA92 /* CWASearchPresenter.m */,
+				EE4E18DD1DF780A100E7EA92 /* CWADetailsPresenter.h */,
+				EE4E18DE1DF780A100E7EA92 /* CWADetailsPresenter.m */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		EE4E18D21DF77F0100E7EA92 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				EEC7A4C41DF5D81D000F6327 /* CWARootWireframeInterface.h */,
+				EE4E18C11DF6E9DE00E7EA92 /* CWASearchWireframeInterface.h */,
+				EE4E18D71DF77F8600E7EA92 /* CWADetailsWireframeInterface.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		EE4E18D31DF77F0F00E7EA92 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E18D01DF706A500E7EA92 /* CWASearchViewControllerProvider.h */,
+				EE4E18D11DF77ED000E7EA92 /* CWADetailsViewControllerProvider.h */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		EE4E18DC1DF7808900E7EA92 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E18C91DF6F41000E7EA92 /* CWASearchPresenterInterface.h */,
+				EE4E18DB1DF7808000E7EA92 /* CWADetailsPresenterInterface.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		EE4E18E01DF7814300E7EA92 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E18E11DF7815B00E7EA92 /* CWASearchInteractorInterface.h */,
+				EE4E18E21DF7817500E7EA92 /* CWASearchInteractor.h */,
+				EE4E18E31DF7817500E7EA92 /* CWASearchInteractor.m */,
+				EE4E18E51DF7819800E7EA92 /* CWADetailsInteractorInterface.h */,
+				EE4E18E61DF781B200E7EA92 /* CWADetailsInteractor.h */,
+				EE4E18E71DF781B200E7EA92 /* CWADetailsInteractor.m */,
+			);
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 		EEC7A4701DF5997C000F6327 = {
@@ -159,6 +227,7 @@
 				EE4E18BD1DF6E73000E7EA92 /* DIConfiguration */,
 				EEC7A4BD1DF5CEDD000F6327 /* Wireframes */,
 				EE4E18C81DF6F3F600E7EA92 /* Presenters */,
+				EE4E18E01DF7814300E7EA92 /* Interactors */,
 				EEC7A4B11DF5B513000F6327 /* ViewControllers */,
 				EEC7A4AD1DF5B513000F6327 /* Resources */,
 				EEC7A47F1DF5997C000F6327 /* CWAAppDelegate.h */,
@@ -202,6 +271,8 @@
 			children = (
 				EEC7A4B71DF5B565000F6327 /* CWASearchViewController.h */,
 				EEC7A4B81DF5B565000F6327 /* CWASearchViewController.m */,
+				EE4E18D41DF77F3400E7EA92 /* CWADetailsViewController.h */,
+				EE4E18D51DF77F3400E7EA92 /* CWADetailsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -217,13 +288,14 @@
 		EEC7A4BD1DF5CEDD000F6327 /* Wireframes */ = {
 			isa = PBXGroup;
 			children = (
-				EEC7A4C41DF5D81D000F6327 /* CWARootWireframeInterface.h */,
+				EE4E18D21DF77F0100E7EA92 /* Interfaces */,
+				EE4E18D31DF77F0F00E7EA92 /* Providers */,
 				EEC7A4BE1DF5CEFF000F6327 /* CWARootWireframe.h */,
 				EEC7A4BF1DF5CEFF000F6327 /* CWARootWireframe.m */,
-				EE4E18D01DF706A500E7EA92 /* CWASearchViewControllerProvider.h */,
-				EE4E18C11DF6E9DE00E7EA92 /* CWASearchWireframeInterface.h */,
 				EEC7A4C11DF5D013000F6327 /* CWASearchWireframe.h */,
 				EEC7A4C21DF5D013000F6327 /* CWASearchWireframe.m */,
+				EE4E18D81DF77FA600E7EA92 /* CWADetailsWireframe.h */,
+				EE4E18D91DF77FA600E7EA92 /* CWADetailsWireframe.m */,
 			);
 			path = Wireframes;
 			sourceTree = "<group>";
@@ -440,13 +512,19 @@
 			files = (
 				EEC7A4B91DF5B565000F6327 /* CWASearchViewController.m in Sources */,
 				EE4E18CF1DF6F45900E7EA92 /* CWAPresentersAssembly.m in Sources */,
+				EE4E18E41DF7817500E7EA92 /* CWASearchInteractor.m in Sources */,
 				EEC7A48A1DF5997C000F6327 /* WeatherApp.xcdatamodeld in Sources */,
+				EE4E18EB1DF781EC00E7EA92 /* CWAInteractorsAssembly.m in Sources */,
 				EEC7A4C31DF5D013000F6327 /* CWASearchWireframe.m in Sources */,
 				EEC7A4C01DF5CEFF000F6327 /* CWARootWireframe.m in Sources */,
 				EE4E18CC1DF6F42900E7EA92 /* CWASearchPresenter.m in Sources */,
 				EEC7A4811DF5997C000F6327 /* CWAAppDelegate.m in Sources */,
+				EE4E18DA1DF77FA600E7EA92 /* CWADetailsWireframe.m in Sources */,
 				EEC7A47E1DF5997C000F6327 /* main.m in Sources */,
 				EE4E18C01DF6E7A300E7EA92 /* CWAAppAssembly.m in Sources */,
+				EE4E18D61DF77F3400E7EA92 /* CWADetailsViewController.m in Sources */,
+				EE4E18DF1DF780A100E7EA92 /* CWADetailsPresenter.m in Sources */,
+				EE4E18E81DF781B200E7EA92 /* CWADetailsInteractor.m in Sources */,
 				EE4E18C41DF6EA3200E7EA92 /* CWAWireframesAssembly.m in Sources */,
 				EE4E18C71DF6EE2400E7EA92 /* CWAViewControllersAssembly.m in Sources */,
 			);

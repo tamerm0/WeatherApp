@@ -38,6 +38,7 @@
 		<string>CWAWireframesAssembly</string>
 		<string>CWAViewControllersAssembly</string>
 		<string>CWAPresentersAssembly</string>
+		<string>CWAInteractorsAssembly</string>
 	</array>
 </dict>
 </plist>

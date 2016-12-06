@@ -10,9 +10,11 @@
 
 #import "CWASearchPresenterInterface.h"
 #import "CWASearchWireframeInterface.h"
+#import "CWASearchInteractorInterface.h"
 
 @interface CWASearchPresenter : NSObject<CWASearchPresenterInterface>
 
 @property (nonatomic, strong)	id<CWASearchWireframeInterface> searchWireframe;
+@property (nonatomic, strong)	id<CWASearchInteractorInterface> searchInteractor;
 
 @end

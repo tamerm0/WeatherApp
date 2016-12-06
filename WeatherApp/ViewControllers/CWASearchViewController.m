@@ -8,6 +8,8 @@
 
 #import "CWASearchViewController.h"
 
+#import "CWASearchPresenterInterface.h"
+
 @interface CWASearchViewController () <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 	
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -35,5 +37,13 @@
 	
 #pragma mark - UISearchBarDelegate methods
 
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+	
+	
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+	
+}
 
 @end

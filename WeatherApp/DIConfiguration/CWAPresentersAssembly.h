@@ -9,13 +9,17 @@
 #import <Typhoon/Typhoon.h>
 
 #import "CWAWireframesAssembly.h"
+#import "CWAInteractorsAssembly.h"
 
-@protocol CWASearchPresenterInterface;
+@protocol CWASearchPresenterInterface, CWADetailsPresenterInterface;
 
 @interface CWAPresentersAssembly : TyphoonAssembly
 
 @property (nonatomic, strong)	CWAWireframesAssembly *wireframes;
+@property (nonatomic, strong)	CWAInteractorsAssembly *interactors;
 
 - (id<CWASearchPresenterInterface>)searchPresenter;
+
+- (id<CWADetailsPresenterInterface>)detailsPresenter;
 
 @end

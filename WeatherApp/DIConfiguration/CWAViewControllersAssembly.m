@@ -16,7 +16,17 @@
 			[initializer injectParameterWith:NSStringFromClass([CWASearchViewController class])];
 			[initializer injectParameterWith:[NSBundle mainBundle]];
 		}];
-		[definition injectProperty:@selector(eventHandler) with:[self.persenters searchPresenter]];
+		[definition injectProperty:@selector(eventHandler) with:[self.presenters searchPresenter]];
+	}];
+}
+
+- (CWADetailsViewController *)detailsViewController {
+	return [TyphoonDefinition withClass:[CWADetailsViewController class] configuration:^(TyphoonDefinition *definition) {
+		[definition useInitializer:@selector(initWithNibName:bundle:) parameters:^(TyphoonMethod *initializer) {
+			[initializer injectParameterWith:NSStringFromClass([CWADetailsViewController class])];
+			[initializer injectParameterWith:[NSBundle mainBundle]];
+		}];
+		[definition injectProperty:@selector(eventHandler) with:[self.presenters detailsPresenter]];
 	}];
 }
 

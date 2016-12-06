@@ -4,12 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>JSONModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-WeatherApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-WeatherAppTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Typhoon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DACD50CD64E01C8DE50F207A30188848</key>
+		<key>C6EC64F7BA449B9DCC1F0D4DEC846904</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E89EA0620E22EDB775A7C107518644DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ED115F27A6230FC5B414DF68AED302BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

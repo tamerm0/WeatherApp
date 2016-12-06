@@ -1,3 +1,17 @@
-PODFILE CHECKSUM: d5352d46398f3f80e1f2b91e62af541f655462f4
+PODS:
+  - JSONModel (1.7.0)
+  - Typhoon (3.5.1):
+    - Typhoon/no-arc (= 3.5.1)
+  - Typhoon/no-arc (3.5.1)
+
+DEPENDENCIES:
+  - JSONModel
+  - Typhoon
+
+SPEC CHECKSUMS:
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  Typhoon: c0950bb9f2e835eb8a7dc6983160109b6baf2dda
+
+PODFILE CHECKSUM: b20dd814d6d9648741cd8f68e41ee1a6e0f0b0ca
 
 COCOAPODS: 1.0.1

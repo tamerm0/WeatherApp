@@ -39,7 +39,8 @@
 		<string>CWAViewControllersAssembly</string>
 		<string>CWAPresentersAssembly</string>
 		<string>CWAInteractorsAssembly</string>
-		<string>CWACoreDataAssembly</string>
+		<string>CWACoreDataComponents</string>
+		<string>CWADAOsAssembly</string>
 	</array>
 </dict>
 </plist>

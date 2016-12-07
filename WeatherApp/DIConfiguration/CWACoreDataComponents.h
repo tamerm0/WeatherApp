@@ -8,9 +8,7 @@
 
 #import <Typhoon/Typhoon.h>
 
-@interface CWACoreDataAssembly : TyphoonAssembly
-
-- (NSManagedObjectContext *)mainManagedObjectContext;
+@interface CWACoreDataComponents : TyphoonAssembly
 
 - (NSManagedObjectContext *)managedObjectContext;
 

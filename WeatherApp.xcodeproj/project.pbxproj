@@ -12,8 +12,11 @@
 		EE311DB31DF833A50007A7C6 /* CWASuggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB21DF833A50007A7C6 /* CWASuggestion.m */; };
 		EE311DB71DF8343D0007A7C6 /* CWASearchSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB61DF8343D0007A7C6 /* CWASearchSuggestions.m */; };
 		EE311DBB1DF8404D0007A7C6 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DBA1DF8404D0007A7C6 /* NSString+Utilities.m */; };
-		EE311DDE1DF84C710007A7C6 /* CWACoreDataAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DDD1DF84C710007A7C6 /* CWACoreDataAssembly.m */; };
+		EE311DDE1DF84C710007A7C6 /* CWACoreDataComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DDD1DF84C710007A7C6 /* CWACoreDataComponents.m */; };
 		EE311DE01DF850FF0007A7C6 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE311DDF1DF850FF0007A7C6 /* Configuration.plist */; };
+		EE311DE31DF8562B0007A7C6 /* CWACitySearchManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DE21DF8562B0007A7C6 /* CWACitySearchManagedObject.m */; };
+		EE311DEA1DF857BB0007A7C6 /* CWACitySearchDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DE91DF857BB0007A7C6 /* CWACitySearchDAO.m */; };
+		EE311DED1DF860FE0007A7C6 /* CWADAOsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DEC1DF860FE0007A7C6 /* CWADAOsAssembly.m */; };
 		EE4E18C01DF6E7A300E7EA92 /* CWAAppAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18BF1DF6E7A300E7EA92 /* CWAAppAssembly.m */; };
 		EE4E18C41DF6EA3200E7EA92 /* CWAWireframesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18C31DF6EA3200E7EA92 /* CWAWireframesAssembly.m */; };
 		EE4E18C71DF6EE2400E7EA92 /* CWAViewControllersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18C61DF6EE2400E7EA92 /* CWAViewControllersAssembly.m */; };
@@ -61,9 +64,17 @@
 		EE311DB91DF8404D0007A7C6 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
 		EE311DBA1DF8404D0007A7C6 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
 		EE311DC51DF840F60007A7C6 /* CWAPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWAPrefixHeader.pch; sourceTree = "<group>"; };
-		EE311DDC1DF84C710007A7C6 /* CWACoreDataAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWACoreDataAssembly.h; sourceTree = "<group>"; };
-		EE311DDD1DF84C710007A7C6 /* CWACoreDataAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWACoreDataAssembly.m; sourceTree = "<group>"; };
+		EE311DDC1DF84C710007A7C6 /* CWACoreDataComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWACoreDataComponents.h; sourceTree = "<group>"; };
+		EE311DDD1DF84C710007A7C6 /* CWACoreDataComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWACoreDataComponents.m; sourceTree = "<group>"; };
 		EE311DDF1DF850FF0007A7C6 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		EE311DE11DF8562B0007A7C6 /* CWACitySearchManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWACitySearchManagedObject.h; sourceTree = "<group>"; };
+		EE311DE21DF8562B0007A7C6 /* CWACitySearchManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWACitySearchManagedObject.m; sourceTree = "<group>"; };
+		EE311DE51DF856C20007A7C6 /* CWACitySearchInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWACitySearchInterface.h; sourceTree = "<group>"; };
+		EE311DE71DF857980007A7C6 /* CWACitySearchDAOInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWACitySearchDAOInterface.h; sourceTree = "<group>"; };
+		EE311DE81DF857BB0007A7C6 /* CWACitySearchDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWACitySearchDAO.h; sourceTree = "<group>"; };
+		EE311DE91DF857BB0007A7C6 /* CWACitySearchDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWACitySearchDAO.m; sourceTree = "<group>"; };
+		EE311DEB1DF860FE0007A7C6 /* CWADAOsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWADAOsAssembly.h; sourceTree = "<group>"; };
+		EE311DEC1DF860FE0007A7C6 /* CWADAOsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWADAOsAssembly.m; sourceTree = "<group>"; };
 		EE4E18BE1DF6E7A300E7EA92 /* CWAAppAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAAppAssembly.h; sourceTree = "<group>"; };
 		EE4E18BF1DF6E7A300E7EA92 /* CWAAppAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAAppAssembly.m; sourceTree = "<group>"; };
 		EE4E18C11DF6E9DE00E7EA92 /* CWASearchWireframeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWASearchWireframeInterface.h; sourceTree = "<group>"; };
@@ -150,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				EE311DB41DF833A90007A7C6 /* ViewModels */,
+				EE311DE41DF856340007A7C6 /* CoreData */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +186,26 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		EE311DE41DF856340007A7C6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EE311DE51DF856C20007A7C6 /* CWACitySearchInterface.h */,
+				EE311DE11DF8562B0007A7C6 /* CWACitySearchManagedObject.h */,
+				EE311DE21DF8562B0007A7C6 /* CWACitySearchManagedObject.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		EE311DE61DF8577F0007A7C6 /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				EE311DE71DF857980007A7C6 /* CWACitySearchDAOInterface.h */,
+				EE311DE81DF857BB0007A7C6 /* CWACitySearchDAO.h */,
+				EE311DE91DF857BB0007A7C6 /* CWACitySearchDAO.m */,
+			);
+			path = DAOs;
+			sourceTree = "<group>";
+		};
 		EE4E18BD1DF6E73000E7EA92 /* DIConfiguration */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,8 +219,10 @@
 				EE4E18CE1DF6F45900E7EA92 /* CWAPresentersAssembly.m */,
 				EE4E18E91DF781EC00E7EA92 /* CWAInteractorsAssembly.h */,
 				EE4E18EA1DF781EC00E7EA92 /* CWAInteractorsAssembly.m */,
-				EE311DDC1DF84C710007A7C6 /* CWACoreDataAssembly.h */,
-				EE311DDD1DF84C710007A7C6 /* CWACoreDataAssembly.m */,
+				EE311DDC1DF84C710007A7C6 /* CWACoreDataComponents.h */,
+				EE311DDD1DF84C710007A7C6 /* CWACoreDataComponents.m */,
+				EE311DEB1DF860FE0007A7C6 /* CWADAOsAssembly.h */,
+				EE311DEC1DF860FE0007A7C6 /* CWADAOsAssembly.m */,
 			);
 			path = DIConfiguration;
 			sourceTree = "<group>";
@@ -274,6 +308,7 @@
 				EE4E18C81DF6F3F600E7EA92 /* Presenters */,
 				EE4E18E01DF7814300E7EA92 /* Interactors */,
 				EEC7A4B11DF5B513000F6327 /* ViewControllers */,
+				EE311DE61DF8577F0007A7C6 /* DAOs */,
 				EE311DB01DF832C90007A7C6 /* Models */,
 				EE311DB81DF8402B0007A7C6 /* Categories */,
 				EEC7A4AD1DF5B513000F6327 /* Resources */,
@@ -562,9 +597,11 @@
 			files = (
 				EEC7A4B91DF5B565000F6327 /* CWASearchViewController.m in Sources */,
 				EE4E18CF1DF6F45900E7EA92 /* CWAPresentersAssembly.m in Sources */,
-				EE311DDE1DF84C710007A7C6 /* CWACoreDataAssembly.m in Sources */,
+				EE311DDE1DF84C710007A7C6 /* CWACoreDataComponents.m in Sources */,
+				EE311DE31DF8562B0007A7C6 /* CWACitySearchManagedObject.m in Sources */,
 				EE4E18E41DF7817500E7EA92 /* CWASearchInteractor.m in Sources */,
 				EEC7A48A1DF5997C000F6327 /* CWACoreDataModel.xcdatamodeld in Sources */,
+				EE311DED1DF860FE0007A7C6 /* CWADAOsAssembly.m in Sources */,
 				EE4E18EB1DF781EC00E7EA92 /* CWAInteractorsAssembly.m in Sources */,
 				EEC7A4C31DF5D013000F6327 /* CWASearchWireframe.m in Sources */,
 				EE311DBB1DF8404D0007A7C6 /* NSString+Utilities.m in Sources */,
@@ -573,6 +610,7 @@
 				EE4E18CC1DF6F42900E7EA92 /* CWASearchPresenter.m in Sources */,
 				EEC7A4811DF5997C000F6327 /* CWAAppDelegate.m in Sources */,
 				EE4E18DA1DF77FA600E7EA92 /* CWADetailsWireframe.m in Sources */,
+				EE311DEA1DF857BB0007A7C6 /* CWACitySearchDAO.m in Sources */,
 				EEC7A47E1DF5997C000F6327 /* main.m in Sources */,
 				EE4E18C01DF6E7A300E7EA92 /* CWAAppAssembly.m in Sources */,
 				EE4E18D61DF77F3400E7EA92 /* CWADetailsViewController.m in Sources */,

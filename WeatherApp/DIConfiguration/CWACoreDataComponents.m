@@ -6,25 +6,14 @@
 //  Copyright © 2016 Careem. All rights reserved.
 //
 
-#import "CWACoreDataAssembly.h"
+#import "CWACoreDataComponents.h"
 
 #import <CoreData/CoreData.h>
 
 #define kCoreDataStoreName		@"coredata.store.name"
 #define kCoreDataModelName		@"coredata.model.name"
 
-@implementation CWACoreDataAssembly
-
-- (NSManagedObjectContext *)mainManagedObjectContext {
-
-	return [TyphoonDefinition withClass:[NSManagedObjectContext class] configuration:^(TyphoonDefinition *definition) {
-		[definition useInitializer:@selector(initWithConcurrencyType:) parameters:^(TyphoonMethod *initializer) {
-			[initializer injectParameterWith:@(NSMainQueueConcurrencyType)];
-		}];
-		definition.scope = TyphoonScopeLazySingleton;
-		[definition injectProperty:@selector(persistentStoreCoordinator) with:self.persistentStoreCoordinator];
-	}];
-}
+@implementation CWACoreDataComponents
 
 - (NSManagedObjectContext *)managedObjectContext {
 	
@@ -32,7 +21,7 @@
 		[definition useInitializer:@selector(initWithConcurrencyType:) parameters:^(TyphoonMethod *initializer) {
 			[initializer injectParameterWith:@(NSPrivateQueueConcurrencyType)];
 		}];
-		[definition injectProperty:@selector(parentContext) with:self.managedObjectContext];
+		[definition injectProperty:@selector(persistentStoreCoordinator) with:self.persistentStoreCoordinator];
 	}];
 }
 
@@ -52,6 +41,8 @@
 			[method injectParameterWith:nil];
 			[method injectParameterWith:nil];
 		}];
+		
+		definition.scope = TyphoonScopeLazySingleton;
 	}];
 }
 

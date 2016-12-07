@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E1359D296699018145572FDC /* libPods-WeatherApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7B7C5C2D2112F086A05C3C /* libPods-WeatherApp.a */; };
 		E82A20E8912B9202F02D6BEC /* libPods-WeatherAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0525F5AC85999ACB53E9EA88 /* libPods-WeatherAppTests.a */; };
+		EE311DB31DF833A50007A7C6 /* CWASuggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB21DF833A50007A7C6 /* CWASuggestion.m */; };
+		EE311DB71DF8343D0007A7C6 /* CWASearchSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB61DF8343D0007A7C6 /* CWASearchSuggestions.m */; };
 		EE311DBB1DF8404D0007A7C6 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DBA1DF8404D0007A7C6 /* NSString+Utilities.m */; };
 		EE4E18C01DF6E7A300E7EA92 /* CWAAppAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18BF1DF6E7A300E7EA92 /* CWAAppAssembly.m */; };
 		EE4E18C41DF6EA3200E7EA92 /* CWAWireframesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18C31DF6EA3200E7EA92 /* CWAWireframesAssembly.m */; };
@@ -50,6 +52,10 @@
 		81CAA2D7C1C873864BE763F7 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		8EB6809AB4EE377621FCC9FF /* Pods-WeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2C3E839DA56FDEC38382038 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EE311DB11DF833A50007A7C6 /* CWASuggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASuggestion.h; sourceTree = "<group>"; };
+		EE311DB21DF833A50007A7C6 /* CWASuggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASuggestion.m; sourceTree = "<group>"; };
+		EE311DB51DF8343D0007A7C6 /* CWASearchSuggestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASearchSuggestions.h; sourceTree = "<group>"; };
+		EE311DB61DF8343D0007A7C6 /* CWASearchSuggestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASearchSuggestions.m; sourceTree = "<group>"; };
 		EE311DB91DF8404D0007A7C6 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
 		EE311DBA1DF8404D0007A7C6 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
 		EE311DC51DF840F60007A7C6 /* CWAPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWAPrefixHeader.pch; sourceTree = "<group>"; };
@@ -133,6 +139,25 @@
 				01C3236C83F43F0726E9F8C7 /* Pods-WeatherAppTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE311DB01DF832C90007A7C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE311DB41DF833A90007A7C6 /* ViewModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE311DB41DF833A90007A7C6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EE311DB11DF833A50007A7C6 /* CWASuggestion.h */,
+				EE311DB21DF833A50007A7C6 /* CWASuggestion.m */,
+				EE311DB51DF8343D0007A7C6 /* CWASearchSuggestions.h */,
+				EE311DB61DF8343D0007A7C6 /* CWASearchSuggestions.m */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		EE311DB81DF8402B0007A7C6 /* Categories */ = {
@@ -242,6 +267,7 @@
 				EE4E18C81DF6F3F600E7EA92 /* Presenters */,
 				EE4E18E01DF7814300E7EA92 /* Interactors */,
 				EEC7A4B11DF5B513000F6327 /* ViewControllers */,
+				EE311DB01DF832C90007A7C6 /* Models */,
 				EE311DB81DF8402B0007A7C6 /* Categories */,
 				EEC7A4AD1DF5B513000F6327 /* Resources */,
 				EEC7A47F1DF5997C000F6327 /* CWAAppDelegate.h */,
@@ -533,6 +559,7 @@
 				EEC7A4C31DF5D013000F6327 /* CWASearchWireframe.m in Sources */,
 				EE311DBB1DF8404D0007A7C6 /* NSString+Utilities.m in Sources */,
 				EEC7A4C01DF5CEFF000F6327 /* CWARootWireframe.m in Sources */,
+				EE311DB31DF833A50007A7C6 /* CWASuggestion.m in Sources */,
 				EE4E18CC1DF6F42900E7EA92 /* CWASearchPresenter.m in Sources */,
 				EEC7A4811DF5997C000F6327 /* CWAAppDelegate.m in Sources */,
 				EE4E18DA1DF77FA600E7EA92 /* CWADetailsWireframe.m in Sources */,
@@ -543,6 +570,7 @@
 				EE4E18E81DF781B200E7EA92 /* CWADetailsInteractor.m in Sources */,
 				EE4E18C41DF6EA3200E7EA92 /* CWAWireframesAssembly.m in Sources */,
 				EE4E18C71DF6EE2400E7EA92 /* CWAViewControllersAssembly.m in Sources */,
+				EE311DB71DF8343D0007A7C6 /* CWASearchSuggestions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CWASearchViewController">
             <connections>
-                <outlet property="searchBar" destination="PH1-58-eH8" id="syr-Uu-UK4"/>
                 <outlet property="suggestionsTableView" destination="VEe-CC-E9s" id="au5-q7-KJ6"/>
                 <outlet property="view" destination="iN0-l3-epB" id="T0K-in-b93"/>
             </connections>
@@ -21,15 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="PH1-58-eH8">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="Qg2-M9-FNI"/>
-                    </connections>
-                </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VEe-CC-E9s">
-                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Jbo-HS-akx"/>
@@ -39,13 +31,10 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="PH1-58-eH8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7sS-GL-zuC"/>
                 <constraint firstItem="VEe-CC-E9s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V0O-Xe-cW1"/>
                 <constraint firstAttribute="trailing" secondItem="VEe-CC-E9s" secondAttribute="trailing" id="XyJ-cL-6jj"/>
                 <constraint firstAttribute="bottom" secondItem="VEe-CC-E9s" secondAttribute="bottom" id="Z5A-6N-M4Q"/>
-                <constraint firstItem="VEe-CC-E9s" firstAttribute="top" secondItem="PH1-58-eH8" secondAttribute="bottom" id="eOj-bS-kKi"/>
-                <constraint firstAttribute="trailing" secondItem="PH1-58-eH8" secondAttribute="trailing" id="xgY-Uc-1D6"/>
-                <constraint firstItem="PH1-58-eH8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="znz-OF-oL2"/>
+                <constraint firstItem="VEe-CC-E9s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qMg-y3-1vN"/>
             </constraints>
         </view>
     </objects>

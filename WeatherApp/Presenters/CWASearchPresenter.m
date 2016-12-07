@@ -8,6 +8,24 @@
 
 #import "CWASearchPresenter.h"
 
+#import "CWASearchSuggestions.h"
+#import "CWASuggestion.h"
+
+#define kMaxSuggestions		10
+
 @implementation CWASearchPresenter
+
+- (void)initialSearchSuggestion:(void (^)(CWASearchSuggestions *))callback {
+	
+}
+
+- (void)querySearchSuggestions:(NSString *)query callback:(void (^)(CWASearchSuggestions *))callback {
+
+	if ([NSString isEmpty:query]) {
+		[self initialSearchSuggestion:callback];
+	} else {
+		
+	}
+}
 
 @end

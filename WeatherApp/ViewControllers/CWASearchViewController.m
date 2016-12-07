@@ -9,11 +9,16 @@
 #import "CWASearchViewController.h"
 
 #import "CWASearchPresenterInterface.h"
+#import "CWASearchSuggestions.h"
+#import "CWASuggestion.h"
 
-@interface CWASearchViewController () <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
+#define kSuggestionCellId		@"suggestions-cell-id"
+
+@interface CWASearchViewController () <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchResultsUpdating>
 	
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (weak, nonatomic) IBOutlet UITableView *suggestionsTableView;
+@property (nonatomic, strong)	UISearchController *searchController;
+@property (nonatomic, weak) IBOutlet UITableView *suggestionsTableView;
+@property (nonatomic, strong)	CWASearchSuggestions *searchSuggestions;
 
 @end
 
@@ -21,6 +26,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	// Initialize search controller
+	self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+	self.searchController.searchResultsUpdater = self;
+	[self.searchController.searchBar sizeToFit];
+	self.suggestionsTableView.tableHeaderView = self.searchController.searchBar;
+	self.searchController.dimsBackgroundDuringPresentation = NO;
+	self.searchController.searchBar.delegate = self;
+	self.definesPresentationContext = YES;
+	
+	// Register table view cells
+	[self.suggestionsTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kSuggestionCellId];
 }
 	
 #pragma mark - UITableViewDelegate methods
@@ -28,22 +44,38 @@
 #pragma mark - UITableViewDataSource methods
 	
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 0;
+	return self.searchSuggestions.suggestions.count;
 }
 	
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	return nil;
+	UITableViewCell *cell = [self.suggestionsTableView dequeueReusableCellWithIdentifier:kSuggestionCellId];
+	CWASuggestion *suggestion = self.searchSuggestions.suggestions[indexPath.row];
+	cell.textLabel.text = suggestion.query;
+	return cell;
 }
 	
 #pragma mark - UISearchBarDelegate methods
 
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
-	
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
 	
 }
 
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-	
+#pragma mark - UISearchResultsUpdating methods
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+	__weak typeof(self) this = self;
+	[self.eventHandler querySearchSuggestions:searchController.searchBar.text callback:^(CWASearchSuggestions *suggestions) {
+		this.searchSuggestions = suggestions;
+		[this.suggestionsTableView reloadData];
+	}];
+}
+
+- (void)willPresentSearchController:(UISearchController *)searchController {
+	__weak typeof(self) this = self;
+	[self.eventHandler initialSearchSuggestion:^(CWASearchSuggestions *suggestions) {
+		this.searchSuggestions = suggestions;
+		[this.suggestionsTableView reloadData];
+	}];
 }
 
 @end

@@ -12,6 +12,8 @@
 		EE311DB31DF833A50007A7C6 /* CWASuggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB21DF833A50007A7C6 /* CWASuggestion.m */; };
 		EE311DB71DF8343D0007A7C6 /* CWASearchSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB61DF8343D0007A7C6 /* CWASearchSuggestions.m */; };
 		EE311DBB1DF8404D0007A7C6 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DBA1DF8404D0007A7C6 /* NSString+Utilities.m */; };
+		EE311DDE1DF84C710007A7C6 /* CWACoreDataAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DDD1DF84C710007A7C6 /* CWACoreDataAssembly.m */; };
+		EE311DE01DF850FF0007A7C6 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE311DDF1DF850FF0007A7C6 /* Configuration.plist */; };
 		EE4E18C01DF6E7A300E7EA92 /* CWAAppAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18BF1DF6E7A300E7EA92 /* CWAAppAssembly.m */; };
 		EE4E18C41DF6EA3200E7EA92 /* CWAWireframesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18C31DF6EA3200E7EA92 /* CWAWireframesAssembly.m */; };
 		EE4E18C71DF6EE2400E7EA92 /* CWAViewControllersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18C61DF6EE2400E7EA92 /* CWAViewControllersAssembly.m */; };
@@ -25,7 +27,7 @@
 		EE4E18EB1DF781EC00E7EA92 /* CWAInteractorsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E18EA1DF781EC00E7EA92 /* CWAInteractorsAssembly.m */; };
 		EEC7A47E1DF5997C000F6327 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A47D1DF5997C000F6327 /* main.m */; };
 		EEC7A4811DF5997C000F6327 /* CWAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4801DF5997C000F6327 /* CWAAppDelegate.m */; };
-		EEC7A48A1DF5997C000F6327 /* WeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4881DF5997C000F6327 /* WeatherApp.xcdatamodeld */; };
+		EEC7A48A1DF5997C000F6327 /* CWACoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4881DF5997C000F6327 /* CWACoreDataModel.xcdatamodeld */; };
 		EEC7A49A1DF5997C000F6327 /* WeatherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4991DF5997C000F6327 /* WeatherAppTests.m */; };
 		EEC7A4B21DF5B513000F6327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC7A4AE1DF5B513000F6327 /* Assets.xcassets */; };
 		EEC7A4B31DF5B513000F6327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC7A4AF1DF5B513000F6327 /* LaunchScreen.storyboard */; };
@@ -59,6 +61,9 @@
 		EE311DB91DF8404D0007A7C6 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
 		EE311DBA1DF8404D0007A7C6 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
 		EE311DC51DF840F60007A7C6 /* CWAPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWAPrefixHeader.pch; sourceTree = "<group>"; };
+		EE311DDC1DF84C710007A7C6 /* CWACoreDataAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWACoreDataAssembly.h; sourceTree = "<group>"; };
+		EE311DDD1DF84C710007A7C6 /* CWACoreDataAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWACoreDataAssembly.m; sourceTree = "<group>"; };
+		EE311DDF1DF850FF0007A7C6 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		EE4E18BE1DF6E7A300E7EA92 /* CWAAppAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAAppAssembly.h; sourceTree = "<group>"; };
 		EE4E18BF1DF6E7A300E7EA92 /* CWAAppAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAAppAssembly.m; sourceTree = "<group>"; };
 		EE4E18C11DF6E9DE00E7EA92 /* CWASearchWireframeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWASearchWireframeInterface.h; sourceTree = "<group>"; };
@@ -93,7 +98,7 @@
 		EEC7A47D1DF5997C000F6327 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEC7A47F1DF5997C000F6327 /* CWAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWAAppDelegate.h; sourceTree = "<group>"; };
 		EEC7A4801DF5997C000F6327 /* CWAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWAAppDelegate.m; sourceTree = "<group>"; };
-		EEC7A4891DF5997C000F6327 /* WeatherApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherApp.xcdatamodel; sourceTree = "<group>"; };
+		EEC7A4891DF5997C000F6327 /* CWACoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CWACoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		EEC7A4901DF5997C000F6327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC7A4951DF5997C000F6327 /* WeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC7A4991DF5997C000F6327 /* WeatherAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherAppTests.m; sourceTree = "<group>"; };
@@ -182,6 +187,8 @@
 				EE4E18CE1DF6F45900E7EA92 /* CWAPresentersAssembly.m */,
 				EE4E18E91DF781EC00E7EA92 /* CWAInteractorsAssembly.h */,
 				EE4E18EA1DF781EC00E7EA92 /* CWAInteractorsAssembly.m */,
+				EE311DDC1DF84C710007A7C6 /* CWACoreDataAssembly.h */,
+				EE311DDD1DF84C710007A7C6 /* CWACoreDataAssembly.m */,
 			);
 			path = DIConfiguration;
 			sourceTree = "<group>";
@@ -273,7 +280,7 @@
 				EEC7A47F1DF5997C000F6327 /* CWAAppDelegate.h */,
 				EEC7A4801DF5997C000F6327 /* CWAAppDelegate.m */,
 				EEC7A4901DF5997C000F6327 /* Info.plist */,
-				EEC7A4881DF5997C000F6327 /* WeatherApp.xcdatamodeld */,
+				EEC7A4881DF5997C000F6327 /* CWACoreDataModel.xcdatamodeld */,
 				EEC7A47C1DF5997C000F6327 /* Supporting Files */,
 			);
 			path = WeatherApp;
@@ -284,6 +291,7 @@
 			children = (
 				EEC7A47D1DF5997C000F6327 /* main.m */,
 				EE311DC51DF840F60007A7C6 /* CWAPrefixHeader.pch */,
+				EE311DDF1DF850FF0007A7C6 /* Configuration.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -439,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC7A4B61DF5B548000F6327 /* CWASearchViewController.xib in Resources */,
+				EE311DE01DF850FF0007A7C6 /* Configuration.plist in Resources */,
 				EEC7A4B21DF5B513000F6327 /* Assets.xcassets in Resources */,
 				EEC7A4B31DF5B513000F6327 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -553,8 +562,9 @@
 			files = (
 				EEC7A4B91DF5B565000F6327 /* CWASearchViewController.m in Sources */,
 				EE4E18CF1DF6F45900E7EA92 /* CWAPresentersAssembly.m in Sources */,
+				EE311DDE1DF84C710007A7C6 /* CWACoreDataAssembly.m in Sources */,
 				EE4E18E41DF7817500E7EA92 /* CWASearchInteractor.m in Sources */,
-				EEC7A48A1DF5997C000F6327 /* WeatherApp.xcdatamodeld in Sources */,
+				EEC7A48A1DF5997C000F6327 /* CWACoreDataModel.xcdatamodeld in Sources */,
 				EE4E18EB1DF781EC00E7EA92 /* CWAInteractorsAssembly.m in Sources */,
 				EEC7A4C31DF5D013000F6327 /* CWASearchWireframe.m in Sources */,
 				EE311DBB1DF8404D0007A7C6 /* NSString+Utilities.m in Sources */,
@@ -777,13 +787,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		EEC7A4881DF5997C000F6327 /* WeatherApp.xcdatamodeld */ = {
+		EEC7A4881DF5997C000F6327 /* CWACoreDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				EEC7A4891DF5997C000F6327 /* WeatherApp.xcdatamodel */,
+				EEC7A4891DF5997C000F6327 /* CWACoreDataModel.xcdatamodel */,
 			);
-			currentVersion = EEC7A4891DF5997C000F6327 /* WeatherApp.xcdatamodel */;
-			path = WeatherApp.xcdatamodeld;
+			currentVersion = EEC7A4891DF5997C000F6327 /* CWACoreDataModel.xcdatamodel */;
+			path = CWACoreDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

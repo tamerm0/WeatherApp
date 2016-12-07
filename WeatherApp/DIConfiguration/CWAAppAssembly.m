@@ -23,16 +23,17 @@
 
 - (UIWindow *)mainWindow {
 	
-	UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	window.rootViewController = [self navigationController];
-	return window;
+	return [TyphoonDefinition withClass:[UIWindow class] configuration:^(TyphoonDefinition *definition) {
+		[definition useInitializer:@selector(initWithFrame:) parameters:^(TyphoonMethod *initializer) {
+			[initializer injectParameterWith:[NSValue valueWithCGRect:[[UIScreen mainScreen] bounds]]];
+		}];
+		[definition injectProperty:@selector(rootViewController) with:[self navigationController]];
+	}];
 }
 
 - (UINavigationController *)navigationController {
 	
-	UINavigationController *navigationController = [[UINavigationController alloc] init];
-	navigationController.navigationBar.translucent = NO;
-	return navigationController;
+	return [TyphoonDefinition withClass:[UINavigationController class]];
 }
 
 @end

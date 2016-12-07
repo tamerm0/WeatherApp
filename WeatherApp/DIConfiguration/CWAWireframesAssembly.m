@@ -21,6 +21,7 @@
 	return [TyphoonDefinition withClass:[CWASearchWireframe class] configuration:^(TyphoonDefinition *definition) {
 		[definition injectProperty:@selector(rootWireframe) with:[self rootWireframe]];
 		[definition injectProperty:@selector(searchViewControllerProvider) with:self.viewControllers];
+		[definition injectProperty:@selector(detailsWireframe) with:self.detailsWireframe];
 	}];
 }
 

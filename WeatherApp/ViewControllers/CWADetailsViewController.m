@@ -30,6 +30,7 @@
 	[self.weatherTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CWAWeatherConditionCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kWeatherCellId];
 	
 	self.weatherTableView.rowHeight = 60;
+	self.title = self.cityName;
 }
 
 - (void)refresh:(id)sender {

@@ -38,7 +38,7 @@
 	for (CWAWeatherModel *model in response.currentCondition) {
 		[detailsArray addObject:[[CWAWeatherCondition alloc] initWithObservationTime:model.observationTime iconUrl:model.weatherIconUrls.firstObject description:model.weatherDescs.firstObject humidity:model.humidity]];
 	}
-	return [[CWASearchWeatherDetails alloc] initWithEmptyMessage:response.errorMsg detailsArray:detailsArray];
+	return [[CWASearchWeatherDetails alloc] initWithEmptyMessage:[response.errorMsg firstObject] detailsArray:detailsArray];
 }
 
 @end

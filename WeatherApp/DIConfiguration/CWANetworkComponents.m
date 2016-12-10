@@ -16,6 +16,13 @@
 			[initializer injectParameterWith:[self apiEndpoint]];
 		}];
 		[definition injectProperty:@selector(completionQueue) with:dispatch_queue_create("network-callbacks", DISPATCH_QUEUE_CONCURRENT)];
+		[definition injectProperty:@selector(requestSerializer) with:[self serializer]];
+	}];
+}
+
+- (AFHTTPRequestSerializer *)serializer {
+	return [TyphoonDefinition withClass:[AFHTTPRequestSerializer class] configuration:^(TyphoonDefinition *definition) {
+		[definition injectProperty:@selector(cachePolicy) with:@(NSURLRequestReloadIgnoringLocalCacheData)];
 	}];
 }
 

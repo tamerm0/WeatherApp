@@ -10,19 +10,11 @@
 #import "CWASearchViewController.h"
 #import "CWASearchWeatherDetails.h"
 
-@interface CWASearchWireframe ()
-
-@property (nonatomic, weak)	CWASearchViewController *searchViewController;
-
-@end
-
 @implementation CWASearchWireframe
 
 - (void)presentSearchViewController {
 
-	CWASearchViewController *viewController = self.searchViewControllerProvider.searchViewController;
-	[self.rootWireframe showRootViewController:viewController];
-	self.searchViewController = viewController;
+	[self.rootWireframe showRootViewController:self.searchViewControllerProvider.searchViewController];
 }
 
 - (void)presentDetailsViewController:(NSString *)cityName weatherDetails:(CWASearchWeatherDetails *)details {
@@ -30,7 +22,7 @@
 }
 
 - (void)showAlertWithMessage:(NSString *)message {
-	[self.rootWireframe showMessageAlert:message viewController:self.searchViewController];
+	[self.rootWireframe showMessageAlert:message];
 }
 
 @end

@@ -11,21 +11,17 @@
 
 @interface CWADetailsWireframe ()
 
-@property (nonatomic, weak)	CWADetailsViewController *detailsViewController;
-
 @end
 
 @implementation CWADetailsWireframe
 
 - (void)presentDetailsViewController:(NSString *)cityName weatherDetails:(NSArray<CWAWeatherCondition *> *)details {
 	
-	CWADetailsViewController *viewController = [self.detailsViewControllerProvider detailsViewController:cityName weather:details];
-	[self.rootWireframe pushViewController:viewController];
-	self.detailsViewController = viewController;
+	[self.rootWireframe pushViewController:[self.detailsViewControllerProvider detailsViewController:cityName weather:details]];
 }
 
 - (void)showAlertMessage:(NSString *)message {
-	[self.rootWireframe showMessageAlert:message viewController:self.detailsViewController];
+	[self.rootWireframe showMessageAlert:message];
 }
 
 @end

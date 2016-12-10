@@ -23,6 +23,6 @@
 /**
  * Show alert with message in view controller
  */
-- (void)showMessageAlert:(NSString *)message viewController:(UIViewController *)controller;
+- (void)showMessageAlert:(NSString *)message;
 	
 @end

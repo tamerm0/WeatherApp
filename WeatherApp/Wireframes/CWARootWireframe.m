@@ -12,24 +12,24 @@
 
 - (void)showRootViewController:(UIViewController *)viewController {
 	
-	UINavigationController *navigationController = [self navigationControllerFromWindow:self.window];
+	UINavigationController *navigationController = [self navigationController];
 	navigationController.viewControllers = @[viewController];
 }
 	
-- (UINavigationController *)navigationControllerFromWindow:(UIWindow *)window {
+- (UINavigationController *)navigationController {
 	
-	UINavigationController *navigationController = (UINavigationController *)[window rootViewController];
+	UINavigationController *navigationController = (UINavigationController *)[self.window rootViewController];
 	return navigationController;
 }
 
-- (void)showMessageAlert:(NSString *)message viewController:(UIViewController *)controller {
+- (void)showMessageAlert:(NSString *)message {
 	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
 	[alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
-	[controller presentViewController:alertController animated:YES completion:nil];
+	[[self navigationController] presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)pushViewController:(UIViewController *)viewController {
-	UINavigationController *navigationController = [self navigationControllerFromWindow:self.window];
+	UINavigationController *navigationController = [self navigationController];
 	[navigationController pushViewController:viewController animated:YES];
 }
 	

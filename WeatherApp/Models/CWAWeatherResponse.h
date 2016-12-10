@@ -9,9 +9,11 @@
 #import <JSONModel/JSONModel.h>
 #import "CWAWeatherModel.h"
 
+@protocol NSString;
+
 @interface CWAWeatherResponse : JSONModel
 
-@property (nonatomic, copy)		NSString<Optional> *errorMsg;
+@property (nonatomic, strong)	NSArray<NSString, Optional> *errorMsg;
 @property (nonatomic, strong)	NSArray<CWAWeatherModel, Optional> *currentCondition;
 
 @end

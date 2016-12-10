@@ -8,6 +8,7 @@ target 'WeatherApp' do
   # Pods for WeatherApp
   pod 'JSONModel'
   pod 'Typhoon'
+  pod 'AFNetworking'
 
   target 'WeatherAppTests' do
     inherit! :search_paths

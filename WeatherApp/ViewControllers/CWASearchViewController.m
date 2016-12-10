@@ -44,6 +44,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	CWASuggestion *suggestion = self.searchSuggestions.suggestions[indexPath.row];
+	[self.eventHandler presentSearchDetails:suggestion.query];
 }
 
 #pragma mark - UITableViewDataSource methods

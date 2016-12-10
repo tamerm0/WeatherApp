@@ -30,7 +30,7 @@
 }
 
 - (CWASearchWeatherDetails *)detailsFromError:(NSError *)error {
-	return [[CWASearchWeatherDetails alloc] initWithEmptyMessage:@"Error occured, try again later."];
+	return [[CWASearchWeatherDetails alloc] initWithEmptyMessage:kStringErrorMessage];
 }
 
 - (CWASearchWeatherDetails *)detailsFromResponse:(CWAWeatherResponse *)response {

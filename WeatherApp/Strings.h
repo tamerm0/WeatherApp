@@ -11,5 +11,6 @@
 
 #define kStringSearchTitle			NSLocalizedString(@"Search", @"")
 #define kStringOK					NSLocalizedString(@"OK", @"")
+#define kStringErrorMessage			NSLocalizedString(@"Error Message", @"")
 
 #endif /* Strings_h */

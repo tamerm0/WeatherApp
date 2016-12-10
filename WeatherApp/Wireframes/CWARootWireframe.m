@@ -24,7 +24,7 @@
 
 - (void)showMessageAlert:(NSString *)message {
 	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
-	[alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+	[alertController addAction:[UIAlertAction actionWithTitle:kStringOK style:UIAlertActionStyleCancel handler:nil]];
 	[[self navigationController] presentViewController:alertController animated:YES completion:nil];
 }
 

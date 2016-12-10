@@ -9,3 +9,5 @@
 "Search" = "Search";
 
 "OK" = "OK";
+
+"Error Message" = "Error occured, check your internet connection and try again later.";

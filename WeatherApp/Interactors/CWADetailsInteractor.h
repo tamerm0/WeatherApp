@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 
 #import "CWADetailsInteractorInterface.h"
+#import "APIClient.h"
 
 @interface CWADetailsInteractor : NSObject <CWADetailsInteractorInterface>
+
+@property (nonatomic, strong)	APIClient *apiClient;
 
 @end

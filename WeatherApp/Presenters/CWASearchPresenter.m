@@ -30,4 +30,8 @@
 	}
 }
 
+- (void)presentSearchDetails:(NSString *)query {
+	
+}
+
 @end

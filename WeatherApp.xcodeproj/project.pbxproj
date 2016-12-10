@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		E1359D296699018145572FDC /* libPods-WeatherApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7B7C5C2D2112F086A05C3C /* libPods-WeatherApp.a */; };
 		E82A20E8912B9202F02D6BEC /* libPods-WeatherAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0525F5AC85999ACB53E9EA88 /* libPods-WeatherAppTests.a */; };
+		EE08AA6B1DFBA08000F91F57 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08AA6A1DFBA08000F91F57 /* APIClient.m */; };
+		EE08AA771DFBAF1A00F91F57 /* CWANetworkComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08AA761DFBAF1A00F91F57 /* CWANetworkComponents.m */; };
+		EE08AA791DFBB22E00F91F57 /* NetworkConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE08AA781DFBB22E00F91F57 /* NetworkConfiguration.plist */; };
+		EE08AA7B1DFBB2B100F91F57 /* CoreDataConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE08AA7A1DFBB2B100F91F57 /* CoreDataConfiguration.plist */; };
 		EE311DB31DF833A50007A7C6 /* CWASuggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB21DF833A50007A7C6 /* CWASuggestion.m */; };
 		EE311DB71DF8343D0007A7C6 /* CWASearchSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB61DF8343D0007A7C6 /* CWASearchSuggestions.m */; };
 		EE311DBB1DF8404D0007A7C6 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DBA1DF8404D0007A7C6 /* NSString+Utilities.m */; };
 		EE311DDE1DF84C710007A7C6 /* CWACoreDataComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DDD1DF84C710007A7C6 /* CWACoreDataComponents.m */; };
-		EE311DE01DF850FF0007A7C6 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE311DDF1DF850FF0007A7C6 /* Configuration.plist */; };
+		EE311DE01DF850FF0007A7C6 /* SearchConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE311DDF1DF850FF0007A7C6 /* SearchConfiguration.plist */; };
 		EE311DE31DF8562B0007A7C6 /* CWACitySearchManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DE21DF8562B0007A7C6 /* CWACitySearchManagedObject.m */; };
 		EE311DEA1DF857BB0007A7C6 /* CWACitySearchDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DE91DF857BB0007A7C6 /* CWACitySearchDAO.m */; };
 		EE311DED1DF860FE0007A7C6 /* CWADAOsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DEC1DF860FE0007A7C6 /* CWADAOsAssembly.m */; };
@@ -57,6 +61,12 @@
 		81CAA2D7C1C873864BE763F7 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		8EB6809AB4EE377621FCC9FF /* Pods-WeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2C3E839DA56FDEC38382038 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EE08AA691DFBA08000F91F57 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		EE08AA6A1DFBA08000F91F57 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		EE08AA751DFBAF1A00F91F57 /* CWANetworkComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWANetworkComponents.h; sourceTree = "<group>"; };
+		EE08AA761DFBAF1A00F91F57 /* CWANetworkComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWANetworkComponents.m; sourceTree = "<group>"; };
+		EE08AA781DFBB22E00F91F57 /* NetworkConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkConfiguration.plist; sourceTree = "<group>"; };
+		EE08AA7A1DFBB2B100F91F57 /* CoreDataConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CoreDataConfiguration.plist; sourceTree = "<group>"; };
 		EE311DB11DF833A50007A7C6 /* CWASuggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASuggestion.h; sourceTree = "<group>"; };
 		EE311DB21DF833A50007A7C6 /* CWASuggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASuggestion.m; sourceTree = "<group>"; };
 		EE311DB51DF8343D0007A7C6 /* CWASearchSuggestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASearchSuggestions.h; sourceTree = "<group>"; };
@@ -66,7 +76,7 @@
 		EE311DC51DF840F60007A7C6 /* CWAPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWAPrefixHeader.pch; sourceTree = "<group>"; };
 		EE311DDC1DF84C710007A7C6 /* CWACoreDataComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWACoreDataComponents.h; sourceTree = "<group>"; };
 		EE311DDD1DF84C710007A7C6 /* CWACoreDataComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWACoreDataComponents.m; sourceTree = "<group>"; };
-		EE311DDF1DF850FF0007A7C6 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		EE311DDF1DF850FF0007A7C6 /* SearchConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SearchConfiguration.plist; sourceTree = "<group>"; };
 		EE311DE11DF8562B0007A7C6 /* CWACitySearchManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWACitySearchManagedObject.h; sourceTree = "<group>"; };
 		EE311DE21DF8562B0007A7C6 /* CWACitySearchManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWACitySearchManagedObject.m; sourceTree = "<group>"; };
 		EE311DE51DF856C20007A7C6 /* CWACitySearchInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWACitySearchInterface.h; sourceTree = "<group>"; };
@@ -157,6 +167,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EE08AA681DFBA06300F91F57 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EE08AA691DFBA08000F91F57 /* APIClient.h */,
+				EE08AA6A1DFBA08000F91F57 /* APIClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		EE311DB01DF832C90007A7C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +242,8 @@
 				EE311DDD1DF84C710007A7C6 /* CWACoreDataComponents.m */,
 				EE311DEB1DF860FE0007A7C6 /* CWADAOsAssembly.h */,
 				EE311DEC1DF860FE0007A7C6 /* CWADAOsAssembly.m */,
+				EE08AA751DFBAF1A00F91F57 /* CWANetworkComponents.h */,
+				EE08AA761DFBAF1A00F91F57 /* CWANetworkComponents.m */,
 			);
 			path = DIConfiguration;
 			sourceTree = "<group>";
@@ -317,6 +338,7 @@
 				EE4E18E01DF7814300E7EA92 /* Interactors */,
 				EEC7A4B11DF5B513000F6327 /* ViewControllers */,
 				EE311DE61DF8577F0007A7C6 /* DAOs */,
+				EE08AA681DFBA06300F91F57 /* Network */,
 				EE311DB01DF832C90007A7C6 /* Models */,
 				EE311DB81DF8402B0007A7C6 /* Categories */,
 				EEC7A4AD1DF5B513000F6327 /* Resources */,
@@ -334,7 +356,9 @@
 			children = (
 				EEC7A47D1DF5997C000F6327 /* main.m */,
 				EE311DC51DF840F60007A7C6 /* CWAPrefixHeader.pch */,
-				EE311DDF1DF850FF0007A7C6 /* Configuration.plist */,
+				EE311DDF1DF850FF0007A7C6 /* SearchConfiguration.plist */,
+				EE08AA781DFBB22E00F91F57 /* NetworkConfiguration.plist */,
+				EE08AA7A1DFBB2B100F91F57 /* CoreDataConfiguration.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -489,8 +513,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE08AA7B1DFBB2B100F91F57 /* CoreDataConfiguration.plist in Resources */,
 				EEC7A4B61DF5B548000F6327 /* CWASearchViewController.xib in Resources */,
-				EE311DE01DF850FF0007A7C6 /* Configuration.plist in Resources */,
+				EE08AA791DFBB22E00F91F57 /* NetworkConfiguration.plist in Resources */,
+				EE311DE01DF850FF0007A7C6 /* SearchConfiguration.plist in Resources */,
 				EEC7A4B21DF5B513000F6327 /* Assets.xcassets in Resources */,
 				EEC7A4B31DF5B513000F6327 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -603,7 +629,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE08AA6B1DFBA08000F91F57 /* APIClient.m in Sources */,
 				EEC7A4B91DF5B565000F6327 /* CWASearchViewController.m in Sources */,
+				EE08AA771DFBAF1A00F91F57 /* CWANetworkComponents.m in Sources */,
 				EE4E18CF1DF6F45900E7EA92 /* CWAPresentersAssembly.m in Sources */,
 				EE311DDE1DF84C710007A7C6 /* CWACoreDataComponents.m in Sources */,
 				EE311DE31DF8562B0007A7C6 /* CWACitySearchManagedObject.m in Sources */,

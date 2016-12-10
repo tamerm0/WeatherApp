@@ -14,4 +14,9 @@
  */
 - (void)querySearchSuggestions:(NSString *)query callback:(void(^)(CWASearchSuggestions *suggestions))callback;
 
+/**
+ * Present details of search query
+ */
+- (void)presentSearchDetails:(NSString *)query;
+
 @end

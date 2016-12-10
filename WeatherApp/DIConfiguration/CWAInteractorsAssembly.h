@@ -9,12 +9,14 @@
 #import <Typhoon/Typhoon.h>
 
 #import "CWADAOsAssembly.h"
+#import "CWANetworkComponents.h"
 
 @protocol CWASearchInteractorInterface, CWADetailsInteractorInterface;
 
 @interface CWAInteractorsAssembly : TyphoonAssembly
 
 @property (nonatomic, strong)	CWADAOsAssembly *daos;
+@property (nonatomic, strong)	CWANetworkComponents *network;
 
 - (id<CWASearchInteractorInterface>)searchInteractor;
 

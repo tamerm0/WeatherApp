@@ -57,7 +57,7 @@
 #pragma mark - UISearchBarDelegate methods
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-	
+	[self.eventHandler presentSearchDetails:searchBar.text];
 }
 
 #pragma mark - UISearchResultsUpdating methods

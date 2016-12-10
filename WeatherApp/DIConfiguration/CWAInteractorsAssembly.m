@@ -20,7 +20,9 @@
 }
 
 - (id<CWADetailsInteractorInterface>)detailsInteractor {
-	return [TyphoonDefinition withClass:[CWADetailsInteractor class]];
+	return [TyphoonDefinition withClass:[CWADetailsInteractor class] configuration:^(TyphoonDefinition *definition) {
+		[definition injectProperty:@selector(apiClient) with:[self.network apiClient]];
+	}];
 }
 
 @end

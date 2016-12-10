@@ -13,6 +13,8 @@
 		EE08AA771DFBAF1A00F91F57 /* CWANetworkComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08AA761DFBAF1A00F91F57 /* CWANetworkComponents.m */; };
 		EE08AA791DFBB22E00F91F57 /* NetworkConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE08AA781DFBB22E00F91F57 /* NetworkConfiguration.plist */; };
 		EE08AA7B1DFBB2B100F91F57 /* CoreDataConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE08AA7A1DFBB2B100F91F57 /* CoreDataConfiguration.plist */; };
+		EE08AA7E1DFBB98500F91F57 /* CWAWeatherResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08AA7D1DFBB98500F91F57 /* CWAWeatherResponse.m */; };
+		EE08AA821DFBBA3300F91F57 /* CWAWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08AA811DFBBA3300F91F57 /* CWAWeatherModel.m */; };
 		EE311DB31DF833A50007A7C6 /* CWASuggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB21DF833A50007A7C6 /* CWASuggestion.m */; };
 		EE311DB71DF8343D0007A7C6 /* CWASearchSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB61DF8343D0007A7C6 /* CWASearchSuggestions.m */; };
 		EE311DBB1DF8404D0007A7C6 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DBA1DF8404D0007A7C6 /* NSString+Utilities.m */; };
@@ -67,6 +69,10 @@
 		EE08AA761DFBAF1A00F91F57 /* CWANetworkComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWANetworkComponents.m; sourceTree = "<group>"; };
 		EE08AA781DFBB22E00F91F57 /* NetworkConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkConfiguration.plist; sourceTree = "<group>"; };
 		EE08AA7A1DFBB2B100F91F57 /* CoreDataConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CoreDataConfiguration.plist; sourceTree = "<group>"; };
+		EE08AA7C1DFBB98500F91F57 /* CWAWeatherResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAWeatherResponse.h; sourceTree = "<group>"; };
+		EE08AA7D1DFBB98500F91F57 /* CWAWeatherResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAWeatherResponse.m; sourceTree = "<group>"; };
+		EE08AA801DFBBA3300F91F57 /* CWAWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAWeatherModel.h; sourceTree = "<group>"; };
+		EE08AA811DFBBA3300F91F57 /* CWAWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAWeatherModel.m; sourceTree = "<group>"; };
 		EE311DB11DF833A50007A7C6 /* CWASuggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASuggestion.h; sourceTree = "<group>"; };
 		EE311DB21DF833A50007A7C6 /* CWASuggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASuggestion.m; sourceTree = "<group>"; };
 		EE311DB51DF8343D0007A7C6 /* CWASearchSuggestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASearchSuggestions.h; sourceTree = "<group>"; };
@@ -176,11 +182,23 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		EE08AA7F1DFBB98C00F91F57 /* JSONModels */ = {
+			isa = PBXGroup;
+			children = (
+				EE08AA7C1DFBB98500F91F57 /* CWAWeatherResponse.h */,
+				EE08AA7D1DFBB98500F91F57 /* CWAWeatherResponse.m */,
+				EE08AA801DFBBA3300F91F57 /* CWAWeatherModel.h */,
+				EE08AA811DFBBA3300F91F57 /* CWAWeatherModel.m */,
+			);
+			name = JSONModels;
+			sourceTree = "<group>";
+		};
 		EE311DB01DF832C90007A7C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				EE311DB41DF833A90007A7C6 /* ViewModels */,
 				EE311DE41DF856340007A7C6 /* CoreData */,
+				EE08AA7F1DFBB98C00F91F57 /* JSONModels */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -633,8 +651,10 @@
 				EEC7A4B91DF5B565000F6327 /* CWASearchViewController.m in Sources */,
 				EE08AA771DFBAF1A00F91F57 /* CWANetworkComponents.m in Sources */,
 				EE4E18CF1DF6F45900E7EA92 /* CWAPresentersAssembly.m in Sources */,
+				EE08AA821DFBBA3300F91F57 /* CWAWeatherModel.m in Sources */,
 				EE311DDE1DF84C710007A7C6 /* CWACoreDataComponents.m in Sources */,
 				EE311DE31DF8562B0007A7C6 /* CWACitySearchManagedObject.m in Sources */,
+				EE08AA7E1DFBB98500F91F57 /* CWAWeatherResponse.m in Sources */,
 				EE4E18E41DF7817500E7EA92 /* CWASearchInteractor.m in Sources */,
 				EEC7A48A1DF5997C000F6327 /* CWACoreDataModel.xcdatamodeld in Sources */,
 				EE311DED1DF860FE0007A7C6 /* CWADAOsAssembly.m in Sources */,

@@ -21,7 +21,7 @@
 		[definition useInitializer:@selector(initWithConcurrencyType:) parameters:^(TyphoonMethod *initializer) {
 			[initializer injectParameterWith:@(NSPrivateQueueConcurrencyType)];
 		}];
-		[definition injectProperty:@selector(persistentStoreCoordinator) with:self.persistentStoreCoordinator];
+		[definition injectProperty:@selector(persistentStoreCoordinator) with:[self persistentStoreCoordinator]];
 	}];
 }
 
@@ -53,7 +53,7 @@
 - (NSArray *)applicationDocumentsDirectories {
 	
 	return [TyphoonDefinition withFactory:[self fileManager] selector:@selector(URLsForDirectory:inDomains:) parameters:^(TyphoonMethod *factoryMethod) {
-		[factoryMethod injectParameterWith:@(NSDocumentationDirectory)];
+		[factoryMethod injectParameterWith:@(NSDocumentDirectory)];
 		[factoryMethod injectParameterWith:@(NSUserDomainMask)];
 	}];
 }

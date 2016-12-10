@@ -40,7 +40,11 @@
 }
 	
 #pragma mark - UITableViewDelegate methods
-	
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 #pragma mark - UITableViewDataSource methods
 	
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

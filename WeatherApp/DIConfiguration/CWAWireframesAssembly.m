@@ -13,6 +13,7 @@
 #import "CWARootWireframe.h"
 
 #import "CWAViewControllersAssembly.h"
+#import "CWAAppAssembly.h"
 
 @implementation CWAWireframesAssembly
 
@@ -28,11 +29,14 @@
 - (id<CWADetailsWireframeInterface>)detailsWireframe {
 	return [TyphoonDefinition withClass:[CWADetailsWireframe class] configuration:^(TyphoonDefinition *definition) {
 		[definition injectProperty:@selector(detailsViewControllerProvider) with:self.viewControllers];
+		[definition injectProperty:@selector(rootWireframe) with:self.rootWireframe];
 	}];
 }
 
 - (id<CWARootWireframeInterface>)rootWireframe {
-	return [TyphoonDefinition withClass:[CWARootWireframe class]];
+	return [TyphoonDefinition withClass:[CWARootWireframe class] configuration:^(TyphoonDefinition *definition) {
+		[definition injectProperty:@selector(window) with:[self.appAssembly mainWindow]];
+	}];
 }
 
 

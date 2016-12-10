@@ -16,6 +16,6 @@
 @property (nonatomic, copy)		NSString *apiKey;
 @property (nonatomic, copy)		NSString *format;
 
-- (void)fetchWeatherCondtions:(NSString *)query callback:(void(^)(CWAWeatherResponse *, NSError *))completion;
+- (void)fetchWeatherCondations:(NSString *)query callback:(void(^)(CWAWeatherResponse *, NSError *))completion;
 
 @end

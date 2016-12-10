@@ -34,4 +34,8 @@
 	return [[CWASearchSuggestions alloc] initWithSuggestions:suggestions];
 }
 
+- (void)queryWeatherDeatils:(NSString *)query callback:(void(^)(CWASearchWeatherDetails *))callback {
+	[self.detailsInteractor queryWeatherDeatils:query callback:callback];
+}
+
 @end

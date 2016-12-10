@@ -19,4 +19,6 @@
 
 - (CWAAppDelegate *)appDelegate;
 
+- (UIWindow *)mainWindow;
+
 @end

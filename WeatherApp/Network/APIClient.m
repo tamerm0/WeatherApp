@@ -18,10 +18,11 @@
 
 @implementation APIClient
 
-- (void)fetchWeatherCondtions:(NSString *)query callback:(void(^)(CWAWeatherResponse *, NSError *))completion {
+- (void)fetchWeatherCondations:(NSString *)query callback:(void(^)(CWAWeatherResponse *, NSError *))completion {
 	[self.httpClient GET:kWeatherPath parameters:[self requestParams:query] progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-		CWAWeatherResponse *response = [[CWAWeatherResponse alloc] initWithDictionary:responseObject error:nil];
-		completion(response, nil);
+		NSError *error = nil;
+		CWAWeatherResponse *response = [[CWAWeatherResponse alloc] initWithDictionary:responseObject error:&error];
+		completion(response, error);
 	} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 		completion(nil, error);
 	}];

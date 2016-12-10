@@ -10,9 +10,11 @@
 
 #import "CWASearchInteractorInterface.h"
 #import "CWACitySearchDAOInterface.h"
+#import "CWADetailsInteractorInterface.h"
 
 @interface CWASearchInteractor : NSObject <CWASearchInteractorInterface>
 
 @property (nonatomic, strong)		id<CWACitySearchDAOInterface> citySearchDao;
+@property (nonatomic, strong)		id<CWADetailsInteractorInterface> detailsInteractor;
 
 @end

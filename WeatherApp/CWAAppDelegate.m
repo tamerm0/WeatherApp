@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 	[[UINavigationBar appearance] setTranslucent:NO];
-	[self.searchWireframe presentSearchViewInWindow:self.window];
+	[self.searchWireframe presentSearchViewController];
 	[self.window makeKeyAndVisible];
 	return YES;
 }

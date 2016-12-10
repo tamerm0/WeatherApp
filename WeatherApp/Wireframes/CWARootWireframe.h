@@ -14,4 +14,6 @@
  */
 @interface CWARootWireframe : NSObject<CWARootWireframeInterface>
 
+@property (nonatomic, weak)	UIWindow *window;
+
 @end

@@ -9,11 +9,12 @@
 #import <Typhoon/Typhoon.h>
 
 @protocol CWASearchWireframeInterface, CWARootWireframeInterface, CWADetailsWireframeInterface;
-@class CWAViewControllersAssembly;
+@class CWAViewControllersAssembly, CWAAppAssembly;
 
 @interface CWAWireframesAssembly : TyphoonAssembly
 
 @property (nonatomic, strong)	CWAViewControllersAssembly *viewControllers;
+@property (nonatomic, strong)	CWAAppAssembly *appAssembly;
 
 - (id<CWASearchWireframeInterface>)searchWireframe;
 

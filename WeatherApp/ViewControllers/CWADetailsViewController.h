@@ -10,8 +10,12 @@
 
 #import "CWADetailsPresenterInterface.h"
 
+@class CWAWeatherCondition;
+
 @interface CWADetailsViewController : UIViewController
 
 @property (nonatomic, strong)	id<CWADetailsPresenterInterface> eventHandler;
+@property (nonatomic, strong)	NSArray<CWAWeatherCondition *> *weatherConditions;
+@property (nonatomic, copy)		NSString *cityName;
 
 @end

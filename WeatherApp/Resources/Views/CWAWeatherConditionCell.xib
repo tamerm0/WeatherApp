@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="ukV-Gh-cgN" customClass="CWAWeatherConditionCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ukV-Gh-cgN" id="OtZ-b7-gIx">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XDx-yR-T35">
+                        <rect key="frame" x="8" y="8" width="67.5" height="67.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XDx-yR-T35" secondAttribute="height" multiplier="1:1" id="zb3-1X-x2k"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfu-Ec-zNb">
+                        <rect key="frame" x="83" y="8" width="242" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vV-g2-Aok">
+                        <rect key="frame" x="83" y="39" width="242" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-bT-Luk">
+                        <rect key="frame" x="325" y="8" width="42" height="67.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bQZ-OY-qzc">
+                        <rect key="frame" x="31" y="31" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8vV-g2-Aok" firstAttribute="height" secondItem="Yfu-Ec-zNb" secondAttribute="height" id="2RI-in-tc3"/>
+                    <constraint firstItem="8vV-g2-Aok" firstAttribute="leading" secondItem="XDx-yR-T35" secondAttribute="trailing" constant="7.5" id="3SL-vR-1TD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6Ma-bT-Luk" secondAttribute="trailing" id="8NB-O6-SSQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8vV-g2-Aok" secondAttribute="bottom" constant="5.5" id="9oq-gy-F5W"/>
+                    <constraint firstItem="XDx-yR-T35" firstAttribute="leading" secondItem="OtZ-b7-gIx" secondAttribute="leadingMargin" id="Cfz-xy-Sx7"/>
+                    <constraint firstItem="6Ma-bT-Luk" firstAttribute="top" secondItem="OtZ-b7-gIx" secondAttribute="topMargin" id="E0Z-IB-lWK"/>
+                    <constraint firstItem="Yfu-Ec-zNb" firstAttribute="leading" secondItem="XDx-yR-T35" secondAttribute="trailing" constant="7.5" id="Kt0-Vo-dh5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6Ma-bT-Luk" secondAttribute="bottom" id="Kwy-2h-5Rd"/>
+                    <constraint firstAttribute="topMargin" secondItem="Yfu-Ec-zNb" secondAttribute="top" id="PAW-7o-Dsj"/>
+                    <constraint firstItem="6Ma-bT-Luk" firstAttribute="leading" secondItem="Yfu-Ec-zNb" secondAttribute="trailing" id="Xmv-Gb-nz1"/>
+                    <constraint firstItem="bQZ-OY-qzc" firstAttribute="centerY" secondItem="XDx-yR-T35" secondAttribute="centerY" id="ecC-Yx-MSq"/>
+                    <constraint firstItem="6Ma-bT-Luk" firstAttribute="leading" secondItem="8vV-g2-Aok" secondAttribute="trailing" id="g8Q-8c-6Pe"/>
+                    <constraint firstItem="8vV-g2-Aok" firstAttribute="top" secondItem="Yfu-Ec-zNb" secondAttribute="bottom" id="k9u-WS-nPi"/>
+                    <constraint firstItem="bQZ-OY-qzc" firstAttribute="centerX" secondItem="XDx-yR-T35" secondAttribute="centerX" id="lFg-gA-dam"/>
+                    <constraint firstItem="XDx-yR-T35" firstAttribute="top" secondItem="OtZ-b7-gIx" secondAttribute="topMargin" id="tGd-VB-bjo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XDx-yR-T35" secondAttribute="bottom" id="yNw-Kc-yVv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="indicatorImageLoading" destination="bQZ-OY-qzc" id="j8Q-nT-TxV"/>
+                <outlet property="labelDescription" destination="Yfu-Ec-zNb" id="8jh-BN-1Mj"/>
+                <outlet property="labelHumidity" destination="8vV-g2-Aok" id="3fb-eZ-Bvd"/>
+                <outlet property="labelObservationTime" destination="6Ma-bT-Luk" id="y8g-8c-5uE"/>
+                <outlet property="weatherImage" destination="XDx-yR-T35" id="G6g-T4-gjE"/>
+            </connections>
+            <point key="canvasLocation" x="-132.5" y="43"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -15,6 +15,11 @@
 		EE08AA7B1DFBB2B100F91F57 /* CoreDataConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE08AA7A1DFBB2B100F91F57 /* CoreDataConfiguration.plist */; };
 		EE08AA7E1DFBB98500F91F57 /* CWAWeatherResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08AA7D1DFBB98500F91F57 /* CWAWeatherResponse.m */; };
 		EE08AA821DFBBA3300F91F57 /* CWAWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08AA811DFBBA3300F91F57 /* CWAWeatherModel.m */; };
+		EE08AA851DFBC94A00F91F57 /* CWAWeatherCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08AA841DFBC94A00F91F57 /* CWAWeatherCondition.m */; };
+		EE08AA881DFBCA7100F91F57 /* CWASearchWeatherDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08AA871DFBCA7100F91F57 /* CWASearchWeatherDetails.m */; };
+		EE08AA8D1DFBE5DF00F91F57 /* CWADetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE08AA8C1DFBE5DF00F91F57 /* CWADetailsViewController.xib */; };
+		EE08AA8F1DFBFDBA00F91F57 /* CWAWeatherConditionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE08AA8E1DFBFDBA00F91F57 /* CWAWeatherConditionCell.xib */; };
+		EE08AA921DFBFF7900F91F57 /* CWAWeatherConditionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08AA911DFBFF7900F91F57 /* CWAWeatherConditionCell.m */; };
 		EE311DB31DF833A50007A7C6 /* CWASuggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB21DF833A50007A7C6 /* CWASuggestion.m */; };
 		EE311DB71DF8343D0007A7C6 /* CWASearchSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DB61DF8343D0007A7C6 /* CWASearchSuggestions.m */; };
 		EE311DBB1DF8404D0007A7C6 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE311DBA1DF8404D0007A7C6 /* NSString+Utilities.m */; };
@@ -73,6 +78,14 @@
 		EE08AA7D1DFBB98500F91F57 /* CWAWeatherResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAWeatherResponse.m; sourceTree = "<group>"; };
 		EE08AA801DFBBA3300F91F57 /* CWAWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAWeatherModel.h; sourceTree = "<group>"; };
 		EE08AA811DFBBA3300F91F57 /* CWAWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAWeatherModel.m; sourceTree = "<group>"; };
+		EE08AA831DFBC94A00F91F57 /* CWAWeatherCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAWeatherCondition.h; sourceTree = "<group>"; };
+		EE08AA841DFBC94A00F91F57 /* CWAWeatherCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAWeatherCondition.m; sourceTree = "<group>"; };
+		EE08AA861DFBCA7100F91F57 /* CWASearchWeatherDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASearchWeatherDetails.h; sourceTree = "<group>"; };
+		EE08AA871DFBCA7100F91F57 /* CWASearchWeatherDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASearchWeatherDetails.m; sourceTree = "<group>"; };
+		EE08AA8C1DFBE5DF00F91F57 /* CWADetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CWADetailsViewController.xib; sourceTree = "<group>"; };
+		EE08AA8E1DFBFDBA00F91F57 /* CWAWeatherConditionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CWAWeatherConditionCell.xib; sourceTree = "<group>"; };
+		EE08AA901DFBFF7900F91F57 /* CWAWeatherConditionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAWeatherConditionCell.h; sourceTree = "<group>"; };
+		EE08AA911DFBFF7900F91F57 /* CWAWeatherConditionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAWeatherConditionCell.m; sourceTree = "<group>"; };
 		EE311DB11DF833A50007A7C6 /* CWASuggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASuggestion.h; sourceTree = "<group>"; };
 		EE311DB21DF833A50007A7C6 /* CWASuggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASuggestion.m; sourceTree = "<group>"; };
 		EE311DB51DF8343D0007A7C6 /* CWASearchSuggestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASearchSuggestions.h; sourceTree = "<group>"; };
@@ -210,6 +223,10 @@
 				EE311DB21DF833A50007A7C6 /* CWASuggestion.m */,
 				EE311DB51DF8343D0007A7C6 /* CWASearchSuggestions.h */,
 				EE311DB61DF8343D0007A7C6 /* CWASearchSuggestions.m */,
+				EE08AA831DFBC94A00F91F57 /* CWAWeatherCondition.h */,
+				EE08AA841DFBC94A00F91F57 /* CWAWeatherCondition.m */,
+				EE08AA861DFBCA7100F91F57 /* CWASearchWeatherDetails.h */,
+				EE08AA871DFBCA7100F91F57 /* CWASearchWeatherDetails.m */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -407,6 +424,8 @@
 				EEC7A4B81DF5B565000F6327 /* CWASearchViewController.m */,
 				EE4E18D41DF77F3400E7EA92 /* CWADetailsViewController.h */,
 				EE4E18D51DF77F3400E7EA92 /* CWADetailsViewController.m */,
+				EE08AA901DFBFF7900F91F57 /* CWAWeatherConditionCell.h */,
+				EE08AA911DFBFF7900F91F57 /* CWAWeatherConditionCell.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -415,6 +434,8 @@
 			isa = PBXGroup;
 			children = (
 				EEC7A4B51DF5B548000F6327 /* CWASearchViewController.xib */,
+				EE08AA8C1DFBE5DF00F91F57 /* CWADetailsViewController.xib */,
+				EE08AA8E1DFBFDBA00F91F57 /* CWAWeatherConditionCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -535,7 +556,9 @@
 				EEC7A4B61DF5B548000F6327 /* CWASearchViewController.xib in Resources */,
 				EE08AA791DFBB22E00F91F57 /* NetworkConfiguration.plist in Resources */,
 				EE311DE01DF850FF0007A7C6 /* SearchConfiguration.plist in Resources */,
+				EE08AA8D1DFBE5DF00F91F57 /* CWADetailsViewController.xib in Resources */,
 				EEC7A4B21DF5B513000F6327 /* Assets.xcassets in Resources */,
+				EE08AA8F1DFBFDBA00F91F57 /* CWAWeatherConditionCell.xib in Resources */,
 				EEC7A4B31DF5B513000F6327 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,6 +673,7 @@
 				EE08AA6B1DFBA08000F91F57 /* APIClient.m in Sources */,
 				EEC7A4B91DF5B565000F6327 /* CWASearchViewController.m in Sources */,
 				EE08AA771DFBAF1A00F91F57 /* CWANetworkComponents.m in Sources */,
+				EE08AA881DFBCA7100F91F57 /* CWASearchWeatherDetails.m in Sources */,
 				EE4E18CF1DF6F45900E7EA92 /* CWAPresentersAssembly.m in Sources */,
 				EE08AA821DFBBA3300F91F57 /* CWAWeatherModel.m in Sources */,
 				EE311DDE1DF84C710007A7C6 /* CWACoreDataComponents.m in Sources */,
@@ -669,8 +693,10 @@
 				EE311DEA1DF857BB0007A7C6 /* CWACitySearchDAO.m in Sources */,
 				EEC7A47E1DF5997C000F6327 /* main.m in Sources */,
 				EE4E18C01DF6E7A300E7EA92 /* CWAAppAssembly.m in Sources */,
+				EE08AA851DFBC94A00F91F57 /* CWAWeatherCondition.m in Sources */,
 				EE4E18D61DF77F3400E7EA92 /* CWADetailsViewController.m in Sources */,
 				EE4E18DF1DF780A100E7EA92 /* CWADetailsPresenter.m in Sources */,
+				EE08AA921DFBFF7900F91F57 /* CWAWeatherConditionCell.m in Sources */,
 				EE4E18E81DF781B200E7EA92 /* CWADetailsInteractor.m in Sources */,
 				EE4E18C41DF6EA3200E7EA92 /* CWAWireframesAssembly.m in Sources */,
 				EE4E18C71DF6EE2400E7EA92 /* CWAViewControllersAssembly.m in Sources */,

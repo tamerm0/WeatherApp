@@ -20,13 +20,15 @@
 	}];
 }
 
-- (CWADetailsViewController *)detailsViewController {
+- (CWADetailsViewController *)detailsViewController:(NSString *)cityName weather:(NSArray<CWAWeatherCondition *> *)weather {
 	return [TyphoonDefinition withClass:[CWADetailsViewController class] configuration:^(TyphoonDefinition *definition) {
 		[definition useInitializer:@selector(initWithNibName:bundle:) parameters:^(TyphoonMethod *initializer) {
 			[initializer injectParameterWith:NSStringFromClass([CWADetailsViewController class])];
 			[initializer injectParameterWith:[NSBundle mainBundle]];
 		}];
 		[definition injectProperty:@selector(eventHandler) with:[self.presenters detailsPresenter]];
+		[definition injectProperty:@selector(weatherConditions) with:weather];
+		[definition injectProperty:@selector(cityName) with:cityName];
 	}];
 }
 

@@ -28,6 +28,7 @@
 			[initializer injectParameterWith:[NSValue valueWithCGRect:[[UIScreen mainScreen] bounds]]];
 		}];
 		[definition injectProperty:@selector(rootViewController) with:[self navigationController]];
+		definition.scope = TyphoonScopeWeakSingleton;
 	}];
 }
 

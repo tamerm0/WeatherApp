@@ -10,9 +10,11 @@
 
 #import "CWADetailsWireframeInterface.h"
 #import "CWADetailsViewControllerProvider.h"
+#import "CWARootWireframeInterface.h"
 
 @interface CWADetailsWireframe : NSObject<CWADetailsWireframeInterface>
 
 @property (nonatomic, strong)	id<CWADetailsViewControllerProvider> detailsViewControllerProvider;
+@property (nonatomic, strong)	id<CWARootWireframeInterface> rootWireframe;
 
 @end

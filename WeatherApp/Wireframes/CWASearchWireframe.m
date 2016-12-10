@@ -8,12 +8,29 @@
 
 #import "CWASearchWireframe.h"
 #import "CWASearchViewController.h"
+#import "CWASearchWeatherDetails.h"
+
+@interface CWASearchWireframe ()
+
+@property (nonatomic, weak)	CWASearchViewController *searchViewController;
+
+@end
 
 @implementation CWASearchWireframe
 
-- (void)presentSearchViewInWindow:(UIWindow *)window {
-	
-	[self.rootWireframe showRootViewController:self.searchViewControllerProvider.searchViewController inWindow:window];
+- (void)presentSearchViewController {
+
+	CWASearchViewController *viewController = self.searchViewControllerProvider.searchViewController;
+	[self.rootWireframe showRootViewController:viewController];
+	self.searchViewController = viewController;
+}
+
+- (void)presentDetailsViewController:(NSString *)cityName weatherDetails:(CWASearchWeatherDetails *)details {
+	[self.detailsWireframe presentDetailsViewController:cityName weatherDetails:details.details];
+}
+
+- (void)showAlertWithMessage:(NSString *)message {
+	[self.rootWireframe showMessageAlert:message viewController:self.searchViewController];
 }
 
 @end

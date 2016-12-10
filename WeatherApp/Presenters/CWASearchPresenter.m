@@ -10,6 +10,7 @@
 
 #import "CWASearchSuggestions.h"
 #import "CWASuggestion.h"
+#import "CWASearchWeatherDetails.h"
 
 @implementation CWASearchPresenter
 
@@ -31,7 +32,16 @@
 }
 
 - (void)presentSearchDetails:(NSString *)query {
-	
+	__weak typeof(self) weakSelf = self;
+	[self.searchInteractor queryWeatherDeatils:query callback:^(CWASearchWeatherDetails *details) {
+		dispatch_async(dispatch_get_main_queue(), ^{
+			if (details.details.count) {
+				[weakSelf.searchWireframe presentDetailsViewController:query weatherDetails:details];
+			} else {
+				[weakSelf.searchWireframe showAlertWithMessage:details.emptyMessage];
+			}
+		});
+	}];
 }
 
 @end

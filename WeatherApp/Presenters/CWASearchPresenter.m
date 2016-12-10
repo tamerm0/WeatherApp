@@ -13,25 +13,20 @@
 
 @implementation CWASearchPresenter
 
-- (void)initialSearchSuggestion:(void (^)(CWASearchSuggestions *))callback {
-	
-	[self.searchInteractor findLatestSearchSuggestions:self.suggestionsSize callback:^(CWASearchSuggestions *suggestions) {
-		dispatch_async(dispatch_get_main_queue(), ^{
-			callback(suggestions);
-		});
-	}];
-}
-
 - (void)querySearchSuggestions:(NSString *)query callback:(void (^)(CWASearchSuggestions *))callback {
 
-	if ([NSString isEmpty:query]) {
-		[self initialSearchSuggestion:callback];
-	} else {
-		[self.searchInteractor findLatestSearchSuggestions:self.suggestionsSize query:query callback:^(CWASearchSuggestions *suggestions) {
-			dispatch_async(dispatch_get_main_queue(), ^{
+	void(^completion)(CWASearchSuggestions *) = ^(CWASearchSuggestions *suggestions){
+		dispatch_async(dispatch_get_main_queue(), ^{
+			if (callback) {
 				callback(suggestions);
-			});
-		}];
+			}
+		});
+	};
+	
+	if ([NSString isEmpty:query]) {
+		[self.searchInteractor findLatestSearchSuggestions:self.suggestionsSize callback:completion];
+	} else {
+		[self.searchInteractor findLatestSearchSuggestions:self.suggestionsSize query:query callback:completion];
 	}
 }
 

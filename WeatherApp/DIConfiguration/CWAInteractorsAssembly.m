@@ -15,7 +15,7 @@
 
 - (id<CWASearchInteractorInterface>)searchInteractor {
 	return [TyphoonDefinition withClass:[CWASearchInteractor class] configuration:^(TyphoonDefinition *definition) {
-		[definition injectProperty:@selector(citySearchDAO) with:[self.daos citySearchDAO]];
+		[definition injectProperty:@selector(citySearchDao) with:[self.daos citySearchDao]];
 	}];
 }
 

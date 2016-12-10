@@ -11,7 +11,7 @@
 
 @implementation CWADAOsAssembly
 
-- (id<CWACitySearchDAOInterface>)citySearchDAO {
+- (id<CWACitySearchDAOInterface>)citySearchDao {
 	return [TyphoonDefinition withClass:[CWACitySearchDAO class] configuration:^(TyphoonDefinition *definition) {
 		[definition injectProperty:@selector(managedObjectContext) with:self.coreDataComponents.managedObjectContext];
 	}];

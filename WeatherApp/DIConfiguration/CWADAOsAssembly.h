@@ -16,6 +16,6 @@
 
 @property (nonatomic, strong)	CWACoreDataComponents *coreDataComponents;
 
-- (id<CWACitySearchDAOInterface>)citySearchDAO;
+- (id<CWACitySearchDAOInterface>)citySearchDao;
 
 @end

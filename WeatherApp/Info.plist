@@ -42,5 +42,9 @@
 		<string>CWACoreDataComponents</string>
 		<string>CWADAOsAssembly</string>
 	</array>
+	<key>TyphoonGlobalConfigFilenames</key>
+	<array>
+		<string>Configuration.plist</string>
+	</array>
 </dict>
 </plist>

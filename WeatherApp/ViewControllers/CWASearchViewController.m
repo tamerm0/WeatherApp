@@ -63,19 +63,16 @@
 #pragma mark - UISearchResultsUpdating methods
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
-	__weak typeof(self) this = self;
-	[self.eventHandler querySearchSuggestions:searchController.searchBar.text callback:^(CWASearchSuggestions *suggestions) {
-		this.searchSuggestions = suggestions;
-		[this.suggestionsTableView reloadData];
-	}];
-}
-
-- (void)willPresentSearchController:(UISearchController *)searchController {
-	__weak typeof(self) this = self;
-	[self.eventHandler initialSearchSuggestion:^(CWASearchSuggestions *suggestions) {
-		this.searchSuggestions = suggestions;
-		[this.suggestionsTableView reloadData];
-	}];
+	if (self.searchController.isActive) {
+		__weak typeof(self) this = self;
+		[self.eventHandler querySearchSuggestions:searchController.searchBar.text callback:^(CWASearchSuggestions *suggestions) {
+			this.searchSuggestions = suggestions;
+			[this.suggestionsTableView reloadData];
+		}];
+	} else {
+		self.searchSuggestions = nil;
+		[self.suggestionsTableView reloadData];
+	}
 }
 
 @end

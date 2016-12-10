@@ -29,10 +29,17 @@
 
 - (void)updateViewWithWeatherCondition:(CWAWeatherCondition *)condition {
 	
+	[self.weatherImage setHidden:YES];
+	[self.indicatorImageLoading setHidden:NO];
+	[self.indicatorImageLoading startAnimating];
+	[self.labelDescription setText:condition.desc];
+	[self.labelHumidity setText:condition.humidity];
+	[self.labelObservationTime setText:condition.observationTime];
 	__weak typeof(self) weakSelf = self;
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:condition.iconUrl]];
 	[request addValue:@"image/*" forHTTPHeaderField:@"Accept"];
 	[self.weatherImage setImageWithURLRequest:request placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+		[weakSelf.weatherImage setImage:image];
 		[weakSelf.weatherImage setHidden:NO];
 		[weakSelf.indicatorImageLoading setHidden:YES];
 		[weakSelf.indicatorImageLoading stopAnimating];
@@ -40,12 +47,6 @@
 		[weakSelf.indicatorImageLoading setHidden:YES];
 		[weakSelf.indicatorImageLoading stopAnimating];
 	}];
-	[self.weatherImage setHidden:YES];
-	[self.indicatorImageLoading setHidden:NO];
-	[self.indicatorImageLoading startAnimating];
-	[self.labelDescription setText:condition.desc];
-	[self.labelHumidity setText:condition.humidity];
-	[self.labelObservationTime setText:condition.observationTime];
 }
 
 @end

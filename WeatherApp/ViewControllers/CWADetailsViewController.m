@@ -28,6 +28,8 @@
 	[self.weatherTableView.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
 	
 	[self.weatherTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CWAWeatherConditionCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kWeatherCellId];
+	
+	self.weatherTableView.rowHeight = 60;
 }
 
 - (void)refresh:(id)sender {
@@ -35,6 +37,7 @@
 	[self.eventHandler refreshWeatherDeatils:self.cityName callback:^(NSArray<CWAWeatherCondition *> *conditions) {
 		weakSelf.weatherConditions = conditions;
 		[weakSelf.weatherTableView reloadData];
+		[weakSelf.weatherTableView.refreshControl endRefreshing];
 	}];
 }
 

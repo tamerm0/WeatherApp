@@ -24,4 +24,8 @@
 	self.detailsViewController = viewController;
 }
 
+- (void)showAlertMessage:(NSString *)message {
+	[self.rootWireframe showMessageAlert:message viewController:self.detailsViewController];
+}
+
 @end

@@ -10,5 +10,6 @@
 #define CWAPrefixHeader_h
 
 #import "NSString+Utilities.h"
+#import "Strings.h"
 
 #endif /* CWAPrefixHeader_h */

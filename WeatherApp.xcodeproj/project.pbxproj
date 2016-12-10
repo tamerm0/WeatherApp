@@ -88,6 +88,7 @@
 		EE08AA901DFBFF7900F91F57 /* CWAWeatherConditionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAWeatherConditionCell.h; sourceTree = "<group>"; };
 		EE08AA911DFBFF7900F91F57 /* CWAWeatherConditionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAWeatherConditionCell.m; sourceTree = "<group>"; };
 		EE08AA931DFC3C4E00F91F57 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		EE08AA951DFC3EC700F91F57 /* Strings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
 		EE311DB11DF833A50007A7C6 /* CWASuggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASuggestion.h; sourceTree = "<group>"; };
 		EE311DB21DF833A50007A7C6 /* CWASuggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASuggestion.m; sourceTree = "<group>"; };
 		EE311DB51DF8343D0007A7C6 /* CWASearchSuggestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWASearchSuggestions.h; sourceTree = "<group>"; };
@@ -392,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				EEC7A47D1DF5997C000F6327 /* main.m */,
+				EE08AA951DFC3EC700F91F57 /* Strings.h */,
 				EE311DC51DF840F60007A7C6 /* CWAPrefixHeader.pch */,
 				EE311DDF1DF850FF0007A7C6 /* SearchConfiguration.plist */,
 				EE08AA781DFBB22E00F91F57 /* NetworkConfiguration.plist */,

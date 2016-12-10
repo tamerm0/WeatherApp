@@ -37,6 +37,7 @@
 	
 	// Register table view cells
 	[self.suggestionsTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kSuggestionCellId];
+	self.title = kStringSearchTitle;
 }
 	
 #pragma mark - UITableViewDelegate methods

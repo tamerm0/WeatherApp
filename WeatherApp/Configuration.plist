@@ -6,5 +6,7 @@
 	<string>CWAStore.sqlite</string>
 	<key>coredata.model.name</key>
 	<string>CWACoreDataModel</string>
+	<key>suggestions.size</key>
+	<integer>10</integer>
 </dict>
 </plist>

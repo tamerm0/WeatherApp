@@ -17,6 +17,7 @@
 	return [TyphoonDefinition withClass:[CWASearchPresenter class] configuration:^(TyphoonDefinition *definition) {
 		[definition injectProperty:@selector(searchWireframe) with:[self.wireframes searchWireframe]];
 		[definition injectProperty:@selector(searchInteractor) with:[self.interactors searchInteractor]];
+		[definition injectProperty:@selector(suggestionsSize) with:TyphoonConfig(@"suggestions.size")];
 	}];
 }
 

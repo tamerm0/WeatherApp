@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 
 #import "CWASearchInteractorInterface.h"
+#import "CWACitySearchDAOInterface.h"
 
 @interface CWASearchInteractor : NSObject <CWASearchInteractorInterface>
+
+@property (nonatomic, strong)		id<CWACitySearchDAOInterface> citySearchDao;
 
 @end

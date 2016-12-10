@@ -16,5 +16,6 @@
 
 @property (nonatomic, strong)	id<CWASearchWireframeInterface> searchWireframe;
 @property (nonatomic, strong)	id<CWASearchInteractorInterface> searchInteractor;
+@property (nonatomic, assign)	NSInteger suggestionsSize;
 
 @end

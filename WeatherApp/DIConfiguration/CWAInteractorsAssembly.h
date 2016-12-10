@@ -8,9 +8,13 @@
 
 #import <Typhoon/Typhoon.h>
 
+#import "CWADAOsAssembly.h"
+
 @protocol CWASearchInteractorInterface, CWADetailsInteractorInterface;
 
 @interface CWAInteractorsAssembly : TyphoonAssembly
+
+@property (nonatomic, strong)	CWADAOsAssembly *daos;
 
 - (id<CWASearchInteractorInterface>)searchInteractor;
 

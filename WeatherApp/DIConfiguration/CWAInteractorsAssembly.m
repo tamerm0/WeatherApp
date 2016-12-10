@@ -14,7 +14,9 @@
 @implementation CWAInteractorsAssembly
 
 - (id<CWASearchInteractorInterface>)searchInteractor {
-	return [TyphoonDefinition withClass:[CWASearchInteractor class]];
+	return [TyphoonDefinition withClass:[CWASearchInteractor class] configuration:^(TyphoonDefinition *definition) {
+		[definition injectProperty:@selector(citySearchDAO) with:[self.daos citySearchDAO]];
+	}];
 }
 
 - (id<CWADetailsInteractorInterface>)detailsInteractor {

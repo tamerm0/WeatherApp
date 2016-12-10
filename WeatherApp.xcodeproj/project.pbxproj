@@ -270,14 +270,22 @@
 		EE4E18E01DF7814300E7EA92 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				EE4E18E11DF7815B00E7EA92 /* CWASearchInteractorInterface.h */,
+				EEBEECF01DFB8BC80005F192 /* Interfaces */,
 				EE4E18E21DF7817500E7EA92 /* CWASearchInteractor.h */,
 				EE4E18E31DF7817500E7EA92 /* CWASearchInteractor.m */,
-				EE4E18E51DF7819800E7EA92 /* CWADetailsInteractorInterface.h */,
 				EE4E18E61DF781B200E7EA92 /* CWADetailsInteractor.h */,
 				EE4E18E71DF781B200E7EA92 /* CWADetailsInteractor.m */,
 			);
 			path = Interactors;
+			sourceTree = "<group>";
+		};
+		EEBEECF01DFB8BC80005F192 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E18E11DF7815B00E7EA92 /* CWASearchInteractorInterface.h */,
+				EE4E18E51DF7819800E7EA92 /* CWADetailsInteractorInterface.h */,
+			);
+			name = Interfaces;
 			sourceTree = "<group>";
 		};
 		EEC7A4701DF5997C000F6327 = {
@@ -670,6 +678,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -717,6 +726,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

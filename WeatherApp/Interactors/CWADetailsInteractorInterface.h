@@ -10,6 +10,9 @@
 
 @protocol CWADetailsInteractorInterface <NSObject>
 
+/**
+ * Query weather details for search query
+ */
 - (void)queryWeatherDeatils:(NSString *)query callback:(void(^)(CWASearchWeatherDetails *))callback;
 
 @end

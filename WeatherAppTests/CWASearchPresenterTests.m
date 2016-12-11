@@ -40,34 +40,32 @@
 }
 
 - (void)testLatestQuerySuggestionsNoQuery {
-	XCTestExpectation *expectation = [self expectationWithDescription:@""];
 	CWASearchSuggestions *mockSuggetions = OCMClassMock([CWASearchSuggestions class]);
 	id invokeBlock = [OCMArg invokeBlockWithArgs:mockSuggetions, nil];
 	OCMStub([self.interactorMock findLatestSearchSuggestions:10 callback:invokeBlock]);
+	OCMReject([self.interactorMock findLatestSearchSuggestions:10 query:[OCMArg any] callback:[OCMArg any]]);
+	__block CWASearchSuggestions *returnedSuggestions = nil;
 	[self.presenter querySearchSuggestions:@"" callback:^(CWASearchSuggestions *suggestions) {
 		
-		XCTAssert(suggestions == mockSuggetions);
-		OCMReject([self.interactorMock findLatestSearchSuggestions:10 query:[OCMArg any] callback:[OCMArg any]]);
-		[expectation fulfill];
+		returnedSuggestions = suggestions;
 	}];
-	[self waitForExpectationsWithTimeout:2 handler:^(NSError * _Nullable error) {
-	}];
+	OCMVerifyAllWithDelay(self.interactorMock, 2);
+	XCTAssert(returnedSuggestions == mockSuggetions);
 }
 
 - (void)testLatestQuerySuggestionsWithQuery {
 	NSString *query = @"Singapore";
-	XCTestExpectation *expectation = [self expectationWithDescription:@""];
 	CWASearchSuggestions *mockSuggetions = OCMClassMock([CWASearchSuggestions class]);
 	id invokeBlock = [OCMArg invokeBlockWithArgs:mockSuggetions, nil];
 	OCMStub([self.interactorMock findLatestSearchSuggestions:10 query:[OCMArg isEqual:query] callback:invokeBlock]);
+	OCMReject([self.interactorMock findLatestSearchSuggestions:10 callback:[OCMArg any]]);
+	__block CWASearchSuggestions *returnedSuggestions = nil;
 	[self.presenter querySearchSuggestions:query callback:^(CWASearchSuggestions *suggestions) {
 		
-		XCTAssert(suggestions == mockSuggetions);
-		OCMReject([self.interactorMock findLatestSearchSuggestions:10 callback:[OCMArg any]]);
-		[expectation fulfill];
+		returnedSuggestions = suggestions;
 	}];
-	[self waitForExpectationsWithTimeout:2 handler:^(NSError * _Nullable error) {
-	}];
+	OCMVerifyAllWithDelay(self.interactorMock, 2);
+	XCTAssert(returnedSuggestions == mockSuggetions);
 }
 
 - (void)testPresentingSearchDetailsFound {

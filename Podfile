@@ -13,6 +13,7 @@ target 'WeatherApp' do
   target 'WeatherAppTests' do
     inherit! :search_paths
     # Pods for testing
+	pod 'OCMock'
   end
 
 end

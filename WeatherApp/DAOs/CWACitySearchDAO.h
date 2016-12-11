@@ -11,8 +11,12 @@
 
 #import "CWACitySearchDAOInterface.h"
 
+@class CWACitySearchManagedObject;
+
 @interface CWACitySearchDAO : NSObject <CWACitySearchDAOInterface>
 
 @property (nonatomic, strong)	NSManagedObjectContext *managedObjectContext;
+
+- (CWACitySearchManagedObject *)createInstance;
 
 @end

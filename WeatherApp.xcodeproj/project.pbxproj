@@ -44,6 +44,7 @@
 		EE5ED2391DFD10BA00CF66C4 /* CWADetailsPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5ED2381DFD10BA00CF66C4 /* CWADetailsPresenterTests.m */; };
 		EE5ED23B1DFD1AB000CF66C4 /* CWASearchInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5ED23A1DFD1AB000CF66C4 /* CWASearchInteractorTests.m */; };
 		EE5ED23D1DFD219800CF66C4 /* CWADetailsInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5ED23C1DFD219800CF66C4 /* CWADetailsInteractorTests.m */; };
+		EE5ED23F1DFD2A0A00CF66C4 /* CWACitySearchDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5ED23E1DFD2A0A00CF66C4 /* CWACitySearchDAOTests.m */; };
 		EEC7A47E1DF5997C000F6327 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A47D1DF5997C000F6327 /* main.m */; };
 		EEC7A4811DF5997C000F6327 /* CWAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4801DF5997C000F6327 /* CWAAppDelegate.m */; };
 		EEC7A48A1DF5997C000F6327 /* CWACoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A4881DF5997C000F6327 /* CWACoreDataModel.xcdatamodeld */; };
@@ -144,6 +145,7 @@
 		EE5ED2381DFD10BA00CF66C4 /* CWADetailsPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWADetailsPresenterTests.m; sourceTree = "<group>"; };
 		EE5ED23A1DFD1AB000CF66C4 /* CWASearchInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWASearchInteractorTests.m; sourceTree = "<group>"; };
 		EE5ED23C1DFD219800CF66C4 /* CWADetailsInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWADetailsInteractorTests.m; sourceTree = "<group>"; };
+		EE5ED23E1DFD2A0A00CF66C4 /* CWACitySearchDAOTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWACitySearchDAOTests.m; sourceTree = "<group>"; };
 		EEC7A4791DF5997C000F6327 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC7A47D1DF5997C000F6327 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEC7A47F1DF5997C000F6327 /* CWAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWAAppDelegate.h; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 				EE5ED2381DFD10BA00CF66C4 /* CWADetailsPresenterTests.m */,
 				EE5ED23A1DFD1AB000CF66C4 /* CWASearchInteractorTests.m */,
 				EE5ED23C1DFD219800CF66C4 /* CWADetailsInteractorTests.m */,
+				EE5ED23E1DFD2A0A00CF66C4 /* CWACitySearchDAOTests.m */,
 				EEC7A49B1DF5997C000F6327 /* Info.plist */,
 			);
 			path = WeatherAppTests;
@@ -725,6 +728,7 @@
 			files = (
 				EE5ED23B1DFD1AB000CF66C4 /* CWASearchInteractorTests.m in Sources */,
 				EE5ED23D1DFD219800CF66C4 /* CWADetailsInteractorTests.m in Sources */,
+				EE5ED23F1DFD2A0A00CF66C4 /* CWACitySearchDAOTests.m in Sources */,
 				EE5ED2371DFD05A300CF66C4 /* CWASearchPresenterTests.m in Sources */,
 				EE5ED2391DFD10BA00CF66C4 /* CWADetailsPresenterTests.m in Sources */,
 			);
